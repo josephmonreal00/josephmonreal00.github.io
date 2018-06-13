@@ -1,0 +1,439 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#workcontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_"
+        "title_ title_ title_ title_ title_ title_ title_ title_ title_ title_ title_ title_"
+        "web_ web_ web_ web_ web_ web_ web_ web_ web_ web_ web_ web_"
+        ". . . . . . . . . . . ."
+        "fter fter fter fter fter fter fter fter fter fter fter fter";
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 0px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+#back_home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". w_b_hme . . . . . . . . .";
+    background-color: white;
+    grid-area: b_hme_;
+}
+
+#within_back_home {
+    padding: 10px 0 0 0;
+    grid-area: w_b_hme;
+    height: 30px;
+}
+
+div h4 > a {
+    color: black;
+}
+
+div h4 > a:hover {
+    color: rgb(26, 106, 163);
+}
+
+#title {
+    grid-area: title_;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-auto-rows: minmax(30px, auto);
+    grid-template-areas: 
+        ". m_work m_work m_work m_work m_work . . . . . .";
+    
+    height: 200px;
+    background-color: rgb(26, 106, 163);
+}
+
+#my_work {
+    grid-area: m_work;
+    font-size: 70px;
+    color: white;
+}
+
+#websites {
+    grid-area: web_;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". web_title web_title web_title web_title web_title web_title web_title web_title web_title web_title ."
+        ". p1 p1 p1 p1 p1 p2 p2 p2 p2 p2 ."
+        ". p1-info p1-info p1-info p1-info p1-info p2_info p2_info p2_info p2_info p2_info ."
+        ". p3 p3 p3 p3 p3 p4 p4 p4 p4 p4 ."
+        ". p3_info p3_info p3_info p3_info p3_info p4_info p4_info p4_info p4_info p4_info ."
+        ". p5 p5 p5 p5 p5 p6 p6 p6 p6 p6 ."
+        ". p5_info p5_info p5_info p5_info p5_info p6_info p6_info p6_info p6_info p6_info .";
+    grid-auto-rows: min(50px, auto);
+    grid-gap: 30px;
+    background-color: rgba(255, 255, 255);
+    padding: 0 0 0 0;
+}
+
+#web_title_header {
+    grid-area: web_title;
+    border-bottom: 8px solid rgb(255, 255, 255);
+}
+
+#proj1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "p_img p_img p_img p_img p_img p_img p_img p_img p_img p_img p_img p_img";
+    grid-area: p1;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#proj1_img {
+    grid-area: p_img;
+    width: 100%;
+    height: 300px;
+}
+
+#proj1_information {
+    display: grid;
+    grid-area: p1-info;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "img_t1 img_t1 img_t1 img_t1 img_t1 . . . d_arrow d_arrow d_arrow d_arrow"
+        "y_info y_info y_info y_info y_info y_info y_info y_info y_info y_info y_info y_info";
+}
+
+#img_title_1_ {
+    grid-area: img_t1;
+    text-transform: uppercase;
+}
+
+#down_arrow_p1 {
+    grid-area: d_arrow;
+    text-align: left;
+}
+
+#yoshi_info {
+    grid-area: y_info;
+}
+
+#proj2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "p_img2 p_img2 p_img2 p_img2 p_img2 p_img2 p_img2 p_img2 p_img2 p_img2 p_img2 p_img2";
+    grid-area: p2;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#proj2_img {
+    grid-area: p_img2;
+    width: 100%;
+    height: 300px;
+}
+
+#proj2_information {
+    display: grid;
+    grid-area: p2_info;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "img_t2 img_t2 img_t2 img_t2 img_t2 . . . d_arrow_2 d_arrow_2 d_arrow_2 d_arrow_2"
+        "p2info_ p2info_ p2info_ p2info_ p2info_ p2info_ p2info_ p2info_ p2info_ p2info_ p2info_ p2info_";
+}
+
+#img_title_2_ {
+    grid-area: img_t2;
+    text-transform: uppercase;
+}
+
+#down_arrow_p2 {
+    grid-area: d_arrow_2;
+    text-align: left;
+}
+
+#proj2_info_ {
+    grid-area: p2info_;
+}
+
+#proj3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "p_img3 p_img3 p_img3 p_img3 p_img3 p_img3 p_img3 p_img3 p_img3 p_img3 p_img3 p_img3";
+    grid-area: p3;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#proj3_img {
+    grid-area: p_img3;
+    width: 100%;
+    height: 300px;
+}
+
+#proj3_information {
+    display: grid;
+    grid-area: p3_info;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "img_t3 img_t3 img_t3 img_t3 img_t3 . . . d_arrow_3 d_arrow_3 d_arrow_3 d_arrow_3"
+        "p3info_ p3info_ p3info_ p3info_ p3info_ p3info_ p3info_ p3info_ p3info_ p3info_ p3info_ p3info_";
+}
+
+#img_title_3_ {
+    grid-area: img_t3;
+    text-transform: uppercase;
+}
+
+#down_arrow_p3 {
+    grid-area: d_arrow_3;
+    text-align: left;
+}
+
+#proj3_info_ {
+    grid-area: p3info_;
+}
+
+
+#proj4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "p_img4 p_img4 p_img4 p_img4 p_img4 p_img4 p_img4 p_img4 p_img4 p_img4 p_img4 p_img4";
+    grid-area: p4;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#proj4_img {
+    grid-area: p_img4;
+    width: 100%;
+    height: 300px;
+}
+
+#proj4_information {
+    display: grid;
+    grid-area: p4_info;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "img_t4 img_t4 img_t4 img_t4 img_t4 . . . d_arrow_4 d_arrow_4 d_arrow_4 d_arrow_4"
+        "p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_";
+}
+
+#img_title_4_ {
+    grid-area: img_t4;
+    text-transform: uppercase;
+}
+
+#down_arrow_p4 {
+    grid-area: d_arrow_4;
+    text-align: left;
+}
+
+#proj4_info_ {
+    grid-area: p4info_;
+}
+
+
+#proj5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "p_img5 p_img5 p_img5 p_img5 p_img5 p_img5 p_img5 p_img5 p_img5 p_img5 p_img5 p_img5";
+    grid-area: p5;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#proj5_img {
+    grid-area: p_img5;
+    width: 100%;
+    height: 300px;
+}
+
+#proj5_information {
+    display: grid;
+    grid-area: p5_info;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "img_t5 img_t5 img_t5 img_t5 img_t5 . . . d_arrow_5 d_arrow_5 d_arrow_5 d_arrow_5"
+        "p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_";
+}
+
+#img_title_5_ {
+    grid-area: img_t5;
+    text-transform: uppercase;
+}
+
+#down_arrow_p5 {
+    grid-area: d_arrow_5;
+    text-align: left;
+}
+
+#proj5_info_ {
+    grid-area: p5info_;
+}
+
+
+#proj6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "p_img6 p_img6 p_img6 p_img6 p_img6 p_img6 p_img6 p_img6 p_img6 p_img6 p_img6 p_img6";
+    grid-area: p6;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#proj6_img {
+    grid-area: p_img6;
+    width: 100%;
+    height: 300px;
+}
+
+#proj6_information {
+    display: grid;
+    grid-area: p6_info;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "img_t6 img_t6 img_t6 img_t6 img_t6 . . . d_arrow_6 d_arrow_6 d_arrow_6 d_arrow_6"
+        "p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_";
+}
+
+#img_title_6_ {
+    grid-area: img_t6;
+    text-transform: uppercase;
+}
+
+#down_arrow_p6 {
+    grid-area: d_arrow_6;
+    text-align: left;
+}
+
+#proj6_info_ {
+    grid-area: p6info_;
+}
+
+
+#footer {
+    display: grid;
+    grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(40px, auto);
+    grid-area: fter;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(26, 106, 163);
+    grid-template-areas: 
+        ". . . . . . . . . . . ."
+        "f_img_ f_img_ f_wrk_ f_wrk_ f_abt_ f_abt_ f_con_ f_con_ f_res_ f_res_ f_hire_ f_hire_";
+}
+
+#footer_img {
+    grid-area: f_img_;
+    height: 150px;
+    width: 150px;
+    padding: 0 0 20px 50px;
+    margin: 0 auto;
+}
+
+#footer_img_ {
+    margin: 0 auto;
+    height: inherit;
+    width: inherit;
+}
+
+#footer_work {
+    grid-area: f_wrk_;
+    padding: 40px 0 0 0;
+}
+
+#footer_work h4 > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_work h4 > a:hover {
+    color: black;
+}
+
+#footer_about {
+    grid-area: f_abt_;
+    padding: 40px 0 0 0;
+}
+
+#footer_about h4 > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_about h4 > a:hover {
+    color: black;
+}
+
+#footer_contact {
+    grid-area: f_con_;
+    padding: 40px 0 0 0;
+}
+
+#footer_contact h4 > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_contact h4 > a:hover {
+    color: black;
+}
+
+#footer_resume {
+    grid-area: f_res_;
+    padding: 40px 0 0 0;
+}
+
+#footer_resume h4 > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_resume h4 > a:hover {
+    color: black;
+}
+
+#footer_hireme {
+    grid-area: f_hire_;
+    padding: 40px 0 0 0;
+}
+
+#footer_hireme h4 > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_hireme h4 > a:hover {
+    color: black;
+}

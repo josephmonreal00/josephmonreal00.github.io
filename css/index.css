@@ -1,0 +1,4028 @@
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+
+body{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* MAIN GRID */
+
+#main_grid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    grid-template-areas: 
+        "info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g"
+        "nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g"
+        "auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g"
+        "char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g"
+        "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
+        "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
+        "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
+        "fter fter fter fter fter fter fter fter fter fter fter fter"
+        "scroll_ scroll_ scroll_ scroll_ scroll_ scroll_ scroll_ scroll_ scroll_ scroll_ scroll_ scroll_";
+}
+
+/* INFORMATION SECTION WITHIN MAIN GRID. */
+
+.info_grid {
+    
+    display: grid;
+    grid-area: info_g;
+    
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+        "num eml . . . . . . . fb twit gith";
+    
+    background-color: rgb(40, 40, 40);
+    padding: 25px 0 0 0;
+    margin: 0 0 0 0;
+}
+
+div div > .anchor_tag {
+    color: #ffffff;
+}
+
+div a:hover {
+    color: rgb(127,127,127);
+}
+
+#number {
+    grid-area: num;
+    text-align: center;
+    padding: 0 0 0 0;
+    margin: auto;
+    font-size: 25px;
+}
+
+#email {
+    grid-area: eml;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+#facebook {
+    grid-area: fb;
+    text-align: center;
+    padding: 0 0 0 0;
+    margin: auto;
+    font-size: 25px;
+}
+
+#twitter {
+    grid-area: twit;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+#github {
+    grid-area: gith;  
+    text-align: center;
+    padding: 0 0 0 0;
+    margin: auto;
+    font-size: 25px;
+}
+
+/* NAVIGATION SECTION*/
+
+.nav_grid {
+    
+    display: grid;
+    grid-area: nav_g;
+    
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+        "hme hme hme wrk wrk wrk abt abt abt cont cont cont";
+    
+    padding: 0 0 20px 0;
+    margin: 0 0 0 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    
+}
+
+
+div .anchor_tag {
+    text-decoration: none;
+    color: black;  
+}
+
+
+h1 a:hover {
+    color: rgb(124, 124, 124);
+}
+
+
+#home {
+    grid-area: hme;
+    text-align: center;
+    padding: 20px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.68);
+}
+
+
+#work {
+    grid-area: wrk;
+    text-align: center;
+    padding: 20px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+
+#about {
+    grid-area: abt;
+    text-align: center;
+    padding: 20px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.72);
+}
+
+
+#contact {
+    grid-area: cont;
+    text-align: center;
+    padding: 20px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.59);
+}
+
+/* AUTHOR SECTION*/
+
+.author_grid {
+    
+    display: grid;
+    grid-area: auth_g;
+    
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+        "logo logo logo logo logo logo"
+        "name name name name name name"
+        ". . resume_ h_me . ."
+        ". . . . . .";
+    
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: white;
+    /*background-color: rgba(0, 0, 0, 0.72);*/
+}
+
+
+#jm_logo_size {
+    height: 500px;
+    width: 500px;
+}
+
+
+#logo_placement {
+    grid-area: logo;
+    /*position: absolute;*/
+    text-align: center;
+    padding: 50px 0 0 0;
+    margin: ;
+    
+}
+
+
+#name_placement {
+    grid-area: name;
+    text-align: center;
+    padding: 50px 0 0 0;
+    margin: ;
+    
+}
+
+
+#name_size {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    /*text-shadow: 3px 3px black;*/
+}
+
+
+#resume {
+    grid-area: resume_;
+    text-align: center;
+}
+
+
+#resume h4 > a {
+    color: black;
+}
+
+
+#resume h4 > a:hover {
+    color: rgb(124, 124, 124);
+}
+
+
+#hire_me {
+    grid-area: h_me;
+    text-align: center;
+}
+
+
+#hire_me h4 > a {
+    color: black;
+}
+
+
+#hire_me h4 > a:hover {
+    color: rgb(124, 124, 124);
+}
+
+/* CHARACTER SECTION*/
+
+.character_grid {
+    
+    display: grid;
+    grid-area: char_g;
+    
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+        "passion_ passion_ passion_ passion_ inspired_ inspired_ inspired_ inspired_ adapt_ adapt_ adapt_ adapt_";
+    
+    padding: 70px 0 70px 0;
+    margin: 0 0 0 0;
+    background-color: rgb(40, 40, 40); 
+}
+
+
+#passionate {
+    grid-area: passion_;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+#inspired {
+    grid-area: inspired_;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+#adaptable {
+    grid-area: adapt_;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* WORK SECTION*/
+
+.work_grid {
+    
+    display: grid;
+    grid-area: work_g;
+    
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        ". myW myW myW myW myW myW myW myW myW myW ."
+        ". t1 t1 t1 t1 t1 t1 t1 . t2 t2 ."
+        ". p1 p1 p1 p1 p1 p1 p1 . pSec pSec ."
+        ". pinfo pinfo pinfo2 pinfo2 . . . . pSec pSec ."
+        "bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork";
+    
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+#myWork {
+    margin: 50px 0 0 0;
+    grid-area: myW;
+    /*text-align: center;*/
+    background-color: white;
+}
+
+
+#myWork h1 {
+    font-size: 60px;
+}
+
+
+#title1 {
+    grid-area: t1;
+    background-color: #ffffff;  
+    border-bottom: 8px solid rgb(26, 106, 163);
+}
+
+
+#title2 {
+    background-color: #ffffff;
+    grid-area: t2;
+    border-bottom: 8px solid rgb(26, 106, 163);
+}
+
+
+#proj1 {
+    /*border-top: 8px solid rgba(255, 54, 247, 0.83);*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_"
+        "p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit"
+        "p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_"
+        "pinfo pinfo pinfo pinfo2 pinfo2 pinfo2 . . . . . .";
+    grid-area: p1;
+    background-color: white;
+}
+
+
+#proj1Img {
+    padding: 15px 0 0 0;
+    height: 470px;
+    width: 100%;  
+    grid-area: p1_img_;
+    border-bottom: 1px solid black;
+}
+
+#p1_img_title_ {
+    grid-area: p1img_tit;
+}
+
+#p1_img_desciption_ {
+    grid-area: p1img_desc_;
+}
+
+
+#p1_info {
+    grid-area: pinfo;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+#p1_visit {
+    grid-area: pinfo2;
+    border: 2px solid black;
+    text-align: center;
+    margin: 0 0 0 5px;
+}
+
+
+#projectSec {
+    /*background-color: aquamarine;*/
+    grid-area: pSec;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        "p2 p2 p2 p2 p2 p2"
+        "p3 p3 p3 p3 p3 p3";
+}
+
+
+#proj2 {
+    grid-area: p2;
+    height: 250px;
+    width: auto;
+    /*background-color: aqua;*/
+    
+}
+
+
+#proj2Img {
+    /*border: 2px solid rgba(0, 0, 0, 0.72);*/
+    padding: 15px 0 0 0;
+    /*padding: 2px;*/
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+
+#proj2 > a {
+    color: black;
+}
+
+
+#proj2 > a:hover {
+    color: rgb(124, 124, 124);
+}
+
+
+#proj3 {
+    grid-area: p3;
+    height: 250px;
+    width: auto;
+}
+
+
+#proj3Img {
+    /*border: 2px solid rgba(0, 0, 0, 0.72);*/
+    /*padding: 2px;*/
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+
+#proj3 > a {
+    color: black;
+}
+
+
+#proj3 > a:hover {
+    color: rgb(124, 124, 124);
+}
+
+
+div h1 > .anchor_tag_breaks {
+    color: white;
+}
+
+
+#break_for_work {
+    display: grid;
+    grid-area: bforwork;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        ". . . . . pmiddle pmiddle . . . . .";
+    background-color: rgb(26, 106, 163);
+    height: 130px;
+    margin: 0 0 0 0;
+    padding: 20px;
+    
+}
+
+#put_in_the_middle {
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    grid-area: pmiddle;
+}
+
+/* ABOUT SECTION */
+
+#about_grid {
+    display: grid;
+    grid-area: about_g;
+    
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+        ". abt_me abt_me abt_me abt_me abt_me . . . . . ."
+        ". summ_ summ_ summ_ summ_ summ_ summ_ summ_ . tech_ tech_ ."
+        ". desc_about desc_about desc_about desc_about desc_about desc_about desc_about . l_sec l_sec l_sec"
+        ". click_ click_ click_ click_hide click_hide click_hide . . . . ."
+        ". c_more c_more c_more c_more c_more c_more c_more . . . ."
+        "b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about";
+    
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#about_me {
+    grid-area: abt_me;
+    margin: 50px 0 0 0;
+}
+
+#about_me h1 {
+    font-size: 60px;
+}
+
+#summary_ {
+    grid-area: summ_;
+    border-bottom: 8px solid rgb(16, 141, 150);
+}
+
+#tech_ex {
+    grid-area: tech_;
+    border-bottom: 8px solid rgb(16, 141, 150);
+}
+
+#description_about {
+    grid-area: desc_about;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#lang_sec{
+    grid-area: l_sec;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+}
+
+#see_more {
+    grid-area: c_more;
+}
+
+#click_for_div {
+    grid-area: click_;
+}
+
+#click_for_div_to_hide {
+    grid-area: click_hide;
+}
+
+#break_for_about {
+    display: grid;
+    grid-area: b_for_about;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        ". . . . . pabout pabout . . . . .";
+    background-color: rgb(16, 141, 150);
+    height: 130px;
+    margin: 130px 0 0 0;
+    padding: 20px;
+}
+
+#put_in_the_middle_about {
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    grid-area: pabout;
+}
+
+/* CONTACT SECTION */
+
+.contact_grid {
+    
+    display: grid;
+    grid-area: cont_g;
+    
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+        ". cont cont cont cont cont . . . . . ."
+        ". dc dc dc dc dc dc dc . tc tc ."
+        ". input_ input_ input_ input_ input_ input_ input_ . o_con_inf o_con_inf ."
+        "b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_";
+    
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#contact_ {
+    grid-area: cont;
+    margin: 50px 0 0 0;
+}
+
+#contact_ h1 {
+    font-size: 60px;
+}
+
+#title_direct_con {
+    grid-area: dc;
+    border-bottom: 8px solid rgb(79, 88, 96);
+}
+
+#title_try_contact {
+    grid-area: tc;
+    grid-auto-rows: minmax(50px, auto);
+    background-color: white;
+    border-bottom: 8px solid rgb(79, 88, 96);
+}
+
+#other_contact_info {
+    grid-area: o_con_inf;
+    background-color: white;
+}
+
+#email_ {
+    width: 800px;
+}
+
+#comment_ {
+    width: 800px;
+    height: 200px;
+}
+
+#the_form {
+    grid-area: input_;
+    background-color: white;
+    padding: 20px 0 50px 0;
+}
+
+#break_for_contact {
+    display: grid;
+    grid-area: b_contact_;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        ". . . . . p_contact p_contact . . . . .";
+    background-color: rgb(79, 88, 96);
+    height: 130px;
+    margin: 50px 0 0 0;
+    padding: 20px;
+}
+
+#put_in_middle_contact {
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    grid-area: p_contact;
+}
+
+#footer {
+    display: grid;
+    grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(40px, auto);
+    grid-area: fter;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    grid-template-areas: 
+        ". . . . . . . . . . . ."
+        "f_img_ f_img_ f_wrk_ f_wrk_ f_abt_ f_abt_ f_con_ f_con_ f_res_ f_res_ f_hire_ f_hire_";
+}
+
+#footer_img {
+    grid-area: f_img_;
+    height: 150px;
+    width: 150px;
+    padding: 0 0 20px 50px;
+    margin: 0 auto;
+}
+
+#footer_img_ {
+    margin: 0 auto;
+    height: inherit;
+    width: inherit;
+}
+
+#footer_work {
+    grid-area: f_wrk_;
+    padding: 40px 0 0 0;
+}
+
+#footer_about {
+    grid-area: f_abt_;
+    padding: 40px 0 0 0;
+}
+
+#footer_contact {
+    grid-area: f_con_;
+    padding: 40px 0 0 0;
+}
+
+#footer_resume {
+    grid-area: f_res_;
+    padding: 40px 0 0 0;
+}
+
+#footer_hireme {
+    grid-area: f_hire_;
+    padding: 40px 0 0 0;
+}
+
+#scroll_to_top {
+    display: grid;
+    grid-area: scroll_;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+        ". . . s_top_ s_top_ s_top_ s_top_ s_top_ s_top_ . . .";
+    background-color: rgb(44, 44, 44);
+    height: 100px;
+}
+
+#put_in_middle_scroll {
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    grid-area: s_top_;
+}
+
+
+
+
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+/* ORIGINAL */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+@media screen 
+    and (min-width: 1367px)
+    and (max-width: 1600px){
+        #main_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(50px, auto);
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            grid-template-areas: 
+                "info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g"
+                "nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g"
+                "auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g"
+                "char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g"
+                "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
+                "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
+                "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
+                "fter fter fter fter fter fter fter fter fter fter fter fter";
+        }
+
+        /* INFORMATION SECTION WITHIN MAIN GRID. */
+
+
+        .info_grid {
+
+            display: grid;
+            grid-area: info_g;
+
+            grid-gap: 0;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                "num eml . . . . . . . fb twit gith";
+
+            background-color: rgb(40, 40, 40);
+            padding: 25px 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+
+        /* The links are set to white when user hasn't hovered over link. */
+
+
+        div div > .anchor_tag {
+            color: #ffffff;
+        }
+
+
+        /* The links are set to hotpink when user has hovered over. */
+
+        div a:hover {
+            color: rgb(127,127,127);
+        }
+
+        #number {
+            grid-area: num;
+            padding: 0 0 0 0;
+        }
+
+        #number a {
+            font-size: 25px;
+        }
+
+        #email {
+            grid-area: eml;
+            padding: 0 0 0 0;
+        }
+
+        #email a {
+            padding: 0 0 0 0;
+            font-size: 25px;
+        }
+
+        #facebook {
+            grid-area: fb;
+            padding: 0 0 0 0;
+            font-size: 25px; 
+        }
+
+        #twitter {
+            grid-area: twit;
+            font-size: 25px; 
+        }
+
+        #github {
+            grid-area: gith;  
+            padding: 0 0 0 0;
+            font-size: 25px;
+        }
+        
+        #break_for_work {
+            display: grid;
+            grid-area: bforwork;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". . . pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle . . .";
+            background-color: rgb(26, 106, 163);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+
+    }
+        
+    #break_for_about {
+        display: grid;
+        grid-area: b_for_about;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            "pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout";
+        background-color: rgb(16, 141, 150);
+        height: 130px;
+        margin: 50px 0 0 0;
+        padding: 20px;
+    }
+        
+    #break_for_contact {
+        display: grid;
+        grid-area: b_contact_;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            ". p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact .";
+        background-color: rgb(79, 88, 96);
+        height: 130px;
+        margin: 50px 0 0 0;
+        padding: 20px;
+    }
+}
+
+/* BETWEEN IPAD AND DESKTOP VIEW */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+/* IN BETWEEN IPAD AND DESKTOP */
+
+
+
+
+
+
+
+
+
+
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+@media screen 
+    and (min-width: 768px)
+    and (max-width: 1024px){
+    
+    /*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+    #main_grid {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        grid-template-areas: 
+            "info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g"
+            "nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g"
+            "auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g"
+            "char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g"
+            "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
+            "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
+            "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
+            "fter fter fter fter fter fter fter fter fter fter fter fter";
+    }
+
+    /* INFORMATION SECTION WITHIN MAIN GRID. */
+
+
+    .info_grid {
+
+        display: grid;
+        grid-area: info_g;
+
+        grid-gap: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            "num num eml eml . . . . . fb twit gith";
+
+        background-color: rgb(40, 40, 40);
+        padding: 25px 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+
+    /* The links are set to white when user hasn't hovered over link. */
+
+
+    div div > .anchor_tag {
+        color: #ffffff;
+    }
+
+
+    /* The links are set to hotpink when user has hovered over. */
+
+    div a:hover {
+        color: rgb(127,127,127);
+    }
+
+    #number {
+        grid-area: num;
+        padding: 0 0 0 0;
+    }
+    
+    #number a {
+        font-size: 25px;
+    }
+
+    #email {
+        grid-area: eml;
+        padding: 0 0 0 0;
+    }
+    
+    #email a {
+        padding: 0 0 0 0;
+        font-size: 25px;
+    }
+
+    #facebook {
+        grid-area: fb;
+        padding: 0 0 0 0;
+        font-size: 25px;
+    }
+
+    #twitter {
+        grid-area: twit;
+        font-size: 25px;
+    }
+
+    #github {
+        grid-area: gith;  
+        padding: 0 0 0 0;
+        font-size: 25px;
+    }
+        
+
+    /* NAVIGATION SECTION*/
+
+
+    .nav_grid {
+
+        display: grid;
+        grid-area: nav_g;
+
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+            "hme hme wrk wrk abt abt cont cont";
+
+        padding: 0 0 20px 0;
+        margin: 0 0 0 0;
+        background-color: rgba(255, 255, 255, 0.9);
+
+    }
+
+
+    div .anchor_tag {
+        text-decoration: none;
+        color: black;  
+    }
+
+
+    h1 a:hover {
+        color: rgb(124, 124, 124);
+    }
+
+
+    #home {
+        grid-area: hme;
+        text-align: center;
+        padding: 20px 0 0 0;
+        background-color: rgba(255, 255, 255, 0.68);
+    }
+
+
+    #work {
+        grid-area: wrk;
+        text-align: center;
+        padding: 20px 0 0 0;
+        background-color: rgba(255, 255, 255, 0.76);
+    }
+
+
+    #about {
+        grid-area: abt;
+        text-align: center;
+        padding: 20px 0 0 0;
+        background-color: rgba(255, 255, 255, 0.72);
+    }
+
+
+    #contact {
+        grid-area: cont;
+        text-align: center;
+        padding: 20px 0 0 0;
+        background-color: rgba(255, 255, 255, 0.59);
+    }
+
+
+    /* WORK SECTION*/
+
+
+    .work_grid {
+
+        display: grid;
+        grid-area: work_g;
+
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+            ". . myW myW myW myW myW myW myW myW . ."
+            
+            ". t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 ."
+            
+            ". p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 ."
+            
+            ". . . . pinfo pinfo pinfo2 pinfo2 . . . . "
+            ". t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 ."
+            "pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec"
+            "bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork";
+
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+
+    #myWork {
+        margin: 50px 0 0 0;
+        grid-area: myW;
+        text-align: center;
+        background-color: white;
+    }
+
+
+    #myWork h1 {
+        font-size: 40px;
+        font-weight: bolder;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+
+    #title1 {
+        grid-area: t1;
+        border-bottom: 8px solid rgb(26, 106, 163);
+        background-color: #ffffff;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        margin: 0 0 0 0;
+    }
+    
+    #title1 h2 {
+        font-size: 30px;
+    }
+
+
+    #title2 {
+        background-color: #ffffff;
+        grid-area: t2;
+        text-align: center;
+        padding: 50px 0 0 0;
+        margin: 20px 0 0 0;
+        border-bottom: 8px solid rgb(26, 106, 163);
+    }
+    
+    #title2 h2 {
+        font-size: 30px;
+        padding: 0 0 20px 0;
+    }
+
+
+    #proj1 {
+        grid-area: p1;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+
+
+    #proj1Img {
+        padding: 0 0 0 0;
+        height: auto;
+        width: 100%;
+        /*border: 1px solid rgb(0, 0, 0);*/
+    }
+
+
+    #p1_info {
+        grid-area: pinfo;
+        border: 2px solid black;
+        text-align: center;
+        padding: 0 0 0 0;
+        margin: 10px 0 0 0;
+    }
+
+
+    #p1_visit {
+        grid-area: pinfo2;
+        border: 2px solid black;
+        text-align: center;
+        margin: 10px 0 0 1px;
+        padding: 0 0 0 0;
+    }
+
+
+    #projectSec {
+        grid-area: pSec;
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            ". . . p2 p2 p2 p2 p2 p2 . . ."
+            ". . . . . . . . . . . ."
+            ". . . p3 p3 p3 p3 p3 p3 . . .";
+    }
+
+
+    #proj2 {
+        grid-area: p2;
+        height: auto;
+        width: auto;
+      
+        text-align: center;
+        margin: 60px 0 0 0;
+    }
+
+
+    #proj2Img {
+        height: 250px;
+        width: 100%;
+        /*border: 1px solid rgb(0, 0, 0);*/
+    }
+
+
+    #proj2 > a {
+        color: black;
+    }
+
+
+    #proj2 > a:hover {
+        color: rgb(124, 124, 124);
+    }
+
+
+    #proj3 {
+        grid-area: p3;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    #proj3Img {
+        height: 250px;
+        width: 100%;
+        margin: 60px 0 0 0;
+        /*border: 1px solid rgb(0, 0, 0);*/
+    }
+
+
+    #proj3 > a {
+        color: black;
+    }
+
+
+    #proj3 > a:hover {
+        color: rgb(124, 124, 124);
+    }
+
+
+    div h1 > .anchor_tag_breaks {
+        color: white;
+    }
+
+
+    #break_for_work {
+        display: grid;
+        grid-area: bforwork;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            ". . . pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle . . .";
+        background-color: rgb(26, 106, 163);
+        height: 130px;
+        margin: 50px 0 0 0;
+        padding: 20px;
+
+    }
+
+    #put_in_the_middle {
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        grid-area: pmiddle;
+    }
+    
+    
+    /*--------------------------*/
+    #about_grid {
+        display: grid;
+        grid-area: about_g;
+
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+            ". abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me ."
+            ". summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ ."
+            ". desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about ."
+            ". tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ ."
+            "l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec"
+            "b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about";
+
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #about_me {
+        grid-area: abt_me;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+
+    #about_me h1 {
+        font-size: 50px;
+    }
+
+    #summary_ {
+        text-align: center;
+        grid-area: summ_;
+        border-bottom: 8px solid rgb(16, 141, 150);
+    }
+
+    #tech_ex {
+        grid-area: tech_;
+        border-bottom: 8px solid rgb(16, 141, 150);
+        text-align: center;
+    }
+
+    #description_about {
+        grid-area: desc_about;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    #lang_sec{
+        grid-area: l_sec;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        text-align: center;
+
+    }
+    
+    /*
+    #see_more {
+        grid-area: c_more;
+    }
+    
+    
+    #click_for_div {
+        grid-area: click_;
+    }
+
+    #click_for_div_to_hide {
+        grid-area: click_hide;
+    }
+    */
+
+    #break_for_about {
+        display: grid;
+        grid-area: b_for_about;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            "pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout";
+        background-color: rgb(16, 141, 150);
+        height: 130px;
+        margin: 50px 0 0 0;
+        padding: 20px;
+    }
+
+    #put_in_the_middle_about {
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        grid-area: pabout;
+    }
+    
+    
+    /* CONTACT SECTION */
+
+
+    .contact_grid {
+
+        display: grid;
+        grid-area: cont_g;
+
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+            ". cont cont cont cont cont cont cont cont cont cont ."
+            ". dc dc dc dc dc dc dc dc dc dc ."
+            ". input_ input_ input_ input_ input_ input_ input_ input_ input_ input_ ."
+            ". tc tc tc tc tc tc tc tc tc tc ."
+            ". o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf ."
+            "b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_";
+
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    #contact_ {
+        grid-area: cont;
+        margin: 50px 0 0 0;
+        text-align: center;
+    }
+
+    #contact_ h1 {
+        font-size: 60px;
+    }
+
+    #title_direct_con {
+        grid-area: dc;
+        text-align: center;
+        border-bottom: 8px solid rgb(79, 88, 96);
+        padding: 0 0 0 0;
+    }
+
+    #title_try_contact {
+        grid-area: tc;
+        grid-auto-rows: minmax(50px, auto);
+        background-color: white;
+        border-bottom: 8px solid rgb(79, 88, 96);
+        text-align: center;
+    }
+
+    #other_contact_info {
+        grid-area: o_con_inf;
+        text-align: center;
+    }
+
+    #email_ {
+        width: 400px;
+    }
+
+    #comment_ {
+        width: 400px;
+        height: 200px;
+    }
+
+    #the_form {
+        text-align: center;
+        grid-area: input_;
+        background-color: white;
+        padding: 15px 0 15px 0;
+    }
+
+    #break_for_contact {
+        display: grid;
+        grid-area: b_contact_;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            ". p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact .";
+        background-color: rgb(79, 88, 96);
+        height: 130px;
+        margin: 50px 0 0 0;
+        padding: 20px;
+    }
+
+    #put_in_middle_contact {
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        grid-area: p_contact;
+    }
+
+}
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+/* IPAD */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+@media screen 
+    and (min-width: 1024px)
+    and (max-width: 1366px){
+    #main_grid {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        grid-template-areas: 
+            "info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g"
+            "nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g"
+            "auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g"
+            "char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g"
+            "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
+            "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
+            "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
+            "fter fter fter fter fter fter fter fter fter fter fter fter";
+    }
+
+        
+    /* INFORMATION SECTION WITHIN MAIN GRID. */
+
+
+    .info_grid {
+
+        display: grid;
+        grid-area: info_g;
+
+        grid-gap: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            "num num eml eml . . . . . fb twit gith";
+
+        background-color: rgb(40, 40, 40);
+        padding: 25px 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+    div div > .anchor_tag {
+        color: #ffffff;
+    }
+
+    div a:hover {
+        color: rgb(127,127,127);
+    }
+
+    #number {
+        grid-area: num;
+        padding: 0 0 0 0;
+    }
+    
+    #number a {
+        font-size: 25px;
+    }
+
+    #email {
+        grid-area: eml;
+        padding: 0 0 0 0;
+    }
+    
+    #email a {
+        padding: 0 0 0 0;
+        font-size: 25px;
+    }
+
+    #facebook {
+        grid-area: fb;
+        padding: 0 0 0 0;
+        font-size: 25px;
+    }
+
+    #twitter {
+        grid-area: twit;
+        font-size: 25px; 
+    }
+
+    #github {
+        grid-area: gith;  
+        padding: 0 0 0 0;
+        font-size: 25px;
+    }
+    
+
+    /* NAVIGATION SECTION*/
+
+
+    .nav_grid {
+
+        display: grid;
+        grid-area: nav_g;
+
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+            "hme hme wrk wrk abt abt cont cont";
+
+        padding: 0 0 20px 0;
+        margin: 0 0 0 0;
+        background-color: rgba(255, 255, 255, 0.9);
+
+    }
+
+
+    div .anchor_tag {
+        text-decoration: none;
+        color: black;  
+    }
+
+
+    h1 a:hover {
+        color: rgb(124, 124, 124);
+    }
+
+
+    #home {
+        grid-area: hme;
+        text-align: center;
+        padding: 20px 0 0 0;
+        background-color: rgba(255, 255, 255, 0.68);
+    }
+
+
+    #work {
+        grid-area: wrk;
+        text-align: center;
+        padding: 20px 0 0 0;
+        background-color: rgba(255, 255, 255, 0.76);
+    }
+
+
+    #about {
+        grid-area: abt;
+        text-align: center;
+        padding: 20px 0 0 0;
+        background-color: rgba(255, 255, 255, 0.72);
+    }
+
+
+    #contact {
+        grid-area: cont;
+        text-align: center;
+        padding: 20px 0 0 0;
+        background-color: rgba(255, 255, 255, 0.59);
+    }
+
+
+    /* WORK SECTION*/
+
+
+    .work_grid {
+
+        display: grid;
+        grid-area: work_g;
+
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+            ". . myW myW myW myW myW myW myW myW . ."
+            
+            ". t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 ."
+            
+            ". p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 ."
+            
+            ". . . . pinfo pinfo pinfo2 pinfo2 . . . . "
+            ". t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 ."
+            "pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec"
+            "bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork";
+
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+
+    #myWork {
+        margin: 50px 0 0 0;
+        grid-area: myW;
+        text-align: center;
+        background-color: white;
+    }
+
+
+    #myWork h1 {
+        font-size: 40px;
+        font-weight: bolder;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+
+    #title1 {
+        grid-area: t1;
+        border-bottom: 8px solid rgb(26, 106, 163);
+        background-color: #ffffff;
+        text-align: center;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+    
+    #title1 h2 {
+        font-size: 30px;
+    }
+
+
+    #title2 {
+        background-color: #ffffff;
+        grid-area: t2;
+        text-align: center;
+        padding: 0 0 0 0;
+        margin: 20px 0 0 0;
+        border-bottom: 8px solid rgb(26, 106, 163);
+    }
+    
+    #title2 h2 {
+        font-size: 30px;
+    }
+
+
+    #proj1 {
+        grid-area: p1;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+
+
+    #proj1Img {
+        padding: 0 0 0 0;
+        height: auto;
+        width: 100%;
+        /*border: 1px solid rgb(0, 0, 0);*/
+    }
+
+
+    #p1_info {
+        grid-area: pinfo;
+        border: 2px solid black;
+        text-align: center;
+        padding: 0 0 0 0;
+        margin: 0 1px 0 0;
+    }
+
+
+    #p1_visit {
+        grid-area: pinfo2;
+        border: 2px solid black;
+        text-align: center;
+        margin: 0 0 0 1px;
+        padding: 0 0 0 0;
+    }
+
+
+    #projectSec {
+        grid-area: pSec;
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            ". . . p2 p2 p2 p2 p2 p2 . . ."
+            ". . . . . . . . . . . ."
+            ". . . p3 p3 p3 p3 p3 p3 . . .";
+    }
+
+
+    #proj2 {
+        grid-area: p2;
+        height: auto;
+        width: auto;
+      
+        text-align: center;
+        margin: 25px 0 0 0;
+    }
+
+
+    #proj2Img {
+        height: 250px;
+        width: 100%;
+        /*border: 1px solid rgb(0, 0, 0);*/
+    }
+
+
+    #proj2 > a {
+        color: black;
+    }
+
+
+    #proj2 > a:hover {
+        color: rgb(124, 124, 124);
+    }
+
+
+    #proj3 {
+        grid-area: p3;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    #proj3Img {
+        height: 250px;
+        width: 100%;
+        /*border: 1px solid rgb(0, 0, 0);*/
+    }
+
+
+    #proj3 > a {
+        color: black;
+    }
+
+
+    #proj3 > a:hover {
+        color: rgb(124, 124, 124);
+    }
+
+
+    div h1 > .anchor_tag_breaks {
+        color: white;
+    }
+
+
+    #break_for_work {
+        display: grid;
+        grid-area: bforwork;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            ". . . pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle . . .";
+        background-color: rgb(26, 106, 163);
+        height: 130px;
+        margin: 50px 0 0 0;
+        padding: 20px;
+
+    }
+
+    #put_in_the_middle {
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        grid-area: pmiddle;
+    }
+    
+
+    #about_grid {
+        display: grid;
+        grid-area: about_g;
+
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+            ". abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me ."
+            ". summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ ."
+            ". desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about ."
+            ". tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ ."
+            "l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec"
+            "b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about";
+
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #about_me {
+        grid-area: abt_me;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+
+    #about_me h1 {
+        font-size: 50px;
+    }
+
+    #summary_ {
+        text-align: center;
+        grid-area: summ_;
+        border-bottom: 8px solid rgb(16, 141, 150);
+    }
+
+    #tech_ex {
+        grid-area: tech_;
+        border-bottom: 8px solid rgb(16, 141, 150);
+        text-align: center;
+    }
+
+    #description_about {
+        grid-area: desc_about;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    #lang_sec{
+        grid-area: l_sec;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        text-align: center;
+
+    }
+    
+    /*
+    #see_more {
+        grid-area: c_more;
+    }
+    
+    
+    #click_for_div {
+        grid-area: click_;
+    }
+
+    #click_for_div_to_hide {
+        grid-area: click_hide;
+    }
+    */
+
+    #break_for_about {
+        display: grid;
+        grid-area: b_for_about;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            "pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout";
+        background-color: rgb(16, 141, 150);
+        height: 130px;
+        margin: 50px 0 0 0;
+        padding: 20px;
+    }
+
+    #put_in_the_middle_about {
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        grid-area: pabout;
+    }
+    
+    
+    /* CONTACT SECTION */
+
+
+    .contact_grid {
+
+        display: grid;
+        grid-area: cont_g;
+
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+            ". cont cont cont cont cont cont cont cont cont cont ."
+            ". dc dc dc dc dc dc dc dc dc dc ."
+            ". input_ input_ input_ input_ input_ input_ input_ input_ input_ input_ ."
+            ". tc tc tc tc tc tc tc tc tc tc ."
+            ". o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf ."
+            "b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_";
+
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    #contact_ {
+        grid-area: cont;
+        margin: 50px 0 0 0;
+        text-align: center;
+    }
+
+    #contact_ h1 {
+        font-size: 60px;
+    }
+
+    #title_direct_con {
+        grid-area: dc;
+        text-align: center;
+        border-bottom: 8px solid rgb(79, 88, 96);
+        padding: 0 0 0 0;
+    }
+
+    #title_try_contact {
+        grid-area: tc;
+        grid-auto-rows: minmax(50px, auto);
+        background-color: white;
+        border-bottom: 8px solid rgb(79, 88, 96);
+        text-align: center;
+    }
+
+    #other_contact_info {
+        grid-area: o_con_inf;
+        text-align: center;
+    }
+
+    #email_ {
+        width: 400px;
+    }
+
+    #comment_ {
+        width: 400px;
+        height: 200px;
+    }
+
+    #the_form {
+        text-align: center;
+        grid-area: input_;
+        background-color: white;
+        padding: 15px 0 15px 0;
+    }
+
+    #break_for_contact {
+        display: grid;
+        grid-area: b_contact_;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas: 
+            ". p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact .";
+        background-color: rgb(79, 88, 96);
+        height: 130px;
+        margin: 50px 0 0 0;
+        padding: 20px;
+    }
+
+    #put_in_middle_contact {
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        grid-area: p_contact;
+    }
+
+}
+
+
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+/* IPAD Pro */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+@media screen 
+    and (min-width: 375px)
+    and (max-width: 667px)
+    and (orientation: portrait){
+        #main_grid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        grid-template-areas: 
+            "info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g"
+            "nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g"
+            "auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g"
+            "char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g"
+            "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
+            "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
+            "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
+            "fter fter fter fter fter fter fter fter fter fter fter fter";
+        }
+        
+        /* INFORMATION SECTION WITHIN MAIN GRID. */
+        
+        .info_grid {
+            display: grid;
+            grid-area: info_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(1px, auto);
+            grid-template-areas: 
+                ". num . eml . fb . twit . gith . .";
+
+            background-color: rgb(40, 40, 40);
+            padding: 25px 0 0 0;
+            margin: 0 0 0 0;
+        }
+        
+        /* The links are set to white when user hasn't hovered over link. */
+        
+        div div > .anchor_tag {
+            color: #ffffff;
+        }
+        
+        /* The links are set to hotpink when user has hovered over. */
+        div a:hover {
+            color: rgb(127,127,127);
+        }
+
+        #number {
+            grid-area: num;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        #email {
+            grid-area: eml;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        #facebook {
+            grid-area: fb;
+            text-align: center;
+            padding: 0 0 0 0;
+
+            font-size: 25px;
+        }
+
+        #twitter {
+            grid-area: twit;
+            text-align: center;
+
+            font-size: 25px;
+        }
+
+        #github {
+            grid-area: gith;  
+            text-align: center;
+            padding: 0 0 0 0;
+
+            font-size: 25px;
+        }
+        
+        /* NAVIGATION SECTION*/
+        
+        .nav_grid {
+            display: grid;
+            grid-area: nav_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". . hme . wrk . cont . abt . .";
+
+            padding: 0 0 20px 0;
+            margin: 0 0 0 0;
+            background-color: rgba(255, 255, 255, 0.9);
+
+        }
+        
+        div .anchor_tag {
+            text-decoration: none;
+            color: black;  
+        }
+        
+        h1 a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        #home {
+            grid-area: hme;
+            text-align: center;
+            padding: 20px 0 0 0;
+            font-size: 10px;
+            background-color: rgba(255, 255, 255, 0.68);
+        }
+
+
+        #work {
+            grid-area: wrk;
+            text-align: center;
+            padding: 20px 0 0 0;
+            font-size: 10px;
+            background-color: rgba(255, 255, 255, 0.76);
+        }
+
+
+        #about {
+            grid-area: abt;
+            text-align: center;
+            padding: 20px 0 0 0;
+            font-size: 10px;
+            background-color: rgba(255, 255, 255, 0.72);
+        }
+
+
+        #contact {
+            grid-area: cont;
+            text-align: center;
+            padding: 20px 0 0 0;
+            font-size: 10px;
+            background-color: rgba(255, 255, 255, 0.59);
+        }
+        
+        /* AUTHOR SECTION*/
+        
+        .author_grid {
+
+            display: grid;
+            grid-area: auth_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                "logo logo logo logo logo logo"
+                "name name name name name name"
+                "resume_ resume_ resume_ resume_ resume_ resume_"
+                "h_me h_me h_me h_me h_me h_me";
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            background-color: white;
+            /*background-color: rgba(0, 0, 0, 0.72);*/
+        }
+        
+        
+        #jm_logo_size {
+            height: 200px;
+            width: 200px;
+        }
+
+
+        #logo_placement {
+            grid-area: logo;
+            /*position: absolute;*/
+            text-align: center;
+            padding: 0 0 0 0;
+
+        }
+        
+        #greeting {
+            font-size: 15px;
+            
+        }
+
+
+        #name_placement {
+            grid-area: name;
+            text-align: center;
+            padding: 0 0 0 0;
+
+        }
+
+        
+        #name_size {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 25px;
+            color: black;
+            letter-spacing: 5px;
+            /*text-shadow: 3px 3px black;*/
+        }
+
+
+        #resume {
+            grid-area: resume_;
+            text-align: center;
+        }
+
+
+        #resume h4 > a {
+            color: black;
+        }
+
+
+        #resume h4 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        #hire_me {
+            grid-area: h_me;
+            text-align: center;
+        }
+
+
+        #hire_me h4 > a {
+            color: black;
+        }
+
+
+        #hire_me h4 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+        
+        /* CHARACTER SECTION*/
+
+
+        .character_grid {
+
+            display: grid;
+            grid-area: char_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                "passion_ passion_ passion_ passion_ passion_ passion_ passion_ passion_ passion_ passion_ passion_ passion_"
+                "inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_"
+                "adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_";
+
+            padding: 70px 0 70px 0;
+            margin: 0 0 0 0;
+            background-color: rgb(40, 40, 40);
+
+
+        }
+
+
+        #passionate {
+            grid-area: passion_;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+
+        #inspired {
+            grid-area: inspired_;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+
+        #adaptable {
+            grid-area: adapt_;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        /*
+        .icon {
+            height: 100px;
+            width 100px;
+            color: white;
+        }
+        */
+        
+        
+        /* WORK SECTION*/
+        
+        .work_grid {
+
+            display: grid;
+            grid-area: work_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(20px, auto);
+            grid-template-areas: 
+                "myW myW myW myW myW myW myW myW myW myW myW myW"
+                ". t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 ."
+                ". p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 ."
+                ". . . pinfo pinfo pinfo pinfo pinfo pinfo . . ."
+                ". . . . . . . . . . . ."
+                ". . . pinfo2 pinfo2 pinfo2 pinfo2 pinfo2 pinfo2 . . ."
+                ". t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 ."
+                ". pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec ."
+                "bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+
+        #myWork {
+            margin: 100px 0 20px 0;
+            grid-area: myW;
+            text-align: center;
+            background-color: white;
+        }
+
+
+        #myWork h1 {
+            font-size: 60px;
+        }
+
+
+        #title1 {
+            grid-area: t1;
+            text-align: center;
+            background-color: #ffffff;  
+            border-bottom: 8px solid rgb(26, 106, 163);
+            padding: 30px 0 10px 0;
+        }
+
+
+        #title2 {
+            background-color: #ffffff;
+            grid-area: t2;
+            text-align: center;
+            border-bottom: 8px solid rgb(26, 106, 163);
+        }
+
+
+        #proj1 {
+            /*border-top: 8px solid rgba(255, 54, 247, 0.83);*/
+            grid-area: p1;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding: 0 0 20px 0;
+        }
+
+
+        #proj1Img {
+            /*border: 2px solid rgba(0, 0, 0, 0.72);*/
+            /*padding: 2px;*/
+            padding: 20px 0 20px 0;
+            height: auto;
+            width: 100%;
+
+        }
+
+
+        #p1_info {
+            grid-area: pinfo;
+            border: 2px solid black;
+            text-align: center;
+            width: 200px;
+            
+        }
+
+
+        #p1_visit {
+            grid-area: pinfo2;
+            border: 2px solid black;
+            text-align: center;
+            width: 200px;
+            margin: 0 10px 0 0;
+
+        }
+
+
+        #projectSec {
+            /*background-color: aquamarine;*/
+            grid-area: pSec;
+            display: grid;
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                "p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2"
+                ". . . . . . . . . . . ."
+                "p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3";
+        }
+
+
+        #proj2 {
+            grid-area: p2;
+            height: auto;
+            width: auto;
+            text-align: center;
+            /*background-color: aqua;*/
+
+        }
+
+
+        #proj2Img {
+            /*border: 2px solid rgba(0, 0, 0, 0.72);*/
+            padding: 15px 0 0 0;
+            /*padding: 2px;*/
+            height: auto;
+            width: 100%;
+
+        }
+
+
+        #proj2 > a {
+            color: black;
+        }
+
+
+        #proj2 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        #proj3 {
+            grid-area: p3;
+            height: auto;
+            width: auto;
+            text-align: center;
+        }
+
+
+        #proj3Img {
+            /*border: 2px solid rgba(0, 0, 0, 0.72);*/
+            /*padding: 2px;*/
+            height: auto;
+            width: 100%;
+        }
+
+
+        #proj3 > a {
+            color: black;
+        }
+
+
+        #proj3 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        div h1 > .anchor_tag_breaks {
+            color: white;
+        }
+
+
+        #break_for_work {
+            display: grid;
+            grid-area: bforwork;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle .";
+            background-color: rgb(26, 106, 163);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+
+        }
+
+        #put_in_the_middle {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: pmiddle;
+        }
+        
+        
+        /* ABOUT SECTION */
+        
+        
+        #about_grid {
+            display: grid;
+            grid-area: about_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me ."
+                ". summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ ." 
+                ". desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about ."
+                ". tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ ."
+                ". l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec ."
+                "b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #about_me {
+            grid-area: abt_me;
+            margin: 50px 0 0 0;
+            text-align: center;
+        }
+
+        #about_me h1 {
+            font-size: 60px;
+        }
+
+        #summary_ {
+            grid-area: summ_;
+            border-bottom: 8px solid rgb(16, 141, 150);
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+
+        #tech_ex {
+            grid-area: tech_;
+            border-bottom: 8px solid rgb(16, 141, 150);
+            text-align: center;
+            padding: 50px 0 20px 0;
+        }
+
+        #description_about {
+            grid-area: desc_about;
+            padding: 20px 0 20px 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+            text-align: left;
+        }
+
+        #lang_sec{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 0px;
+            
+            grid-template-areas: 
+                "lprograming lprograming lprograming lprograming lprograming lprograming lprograming lprograming lprograming lprograming lprograming lprograming"
+                "langs_ langs_ langs_ langs_ langs_ langs_ langs_ langs_ langs_ langs_ langs_ langs_"
+                "libs_ libs_ libs_ libs_ libs_ libs_ libs_ libs_ libs_ libs_ libs_ libs_"
+                "the_libs the_libs the_libs the_libs the_libs the_libs the_libs the_libs the_libs the_libs the_libs the_libs";
+            grid-auto-rows: minmax(10px, auto);
+            grid-area: l_sec;
+            margin: 0 0 0 0;
+            padding: 20px 0 20px 0;
+            text-align: center;
+
+        }
+        
+        #lang_programming {
+            grid-area: lprograming;
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        #languages_ {
+            grid-area: langs_;
+            text-align: center;
+        }
+        
+        #libraries_ {
+            grid-area: libs_;
+            text-align: center;
+             text-decoration: underline;
+            /*padding: 0 0 0 30px;*/
+        }
+        
+        #the_libraries {
+            grid-area: the_libs;
+            text-align: center;
+        }
+        /*
+        #see_more {
+            grid-area: c_more;
+        }
+
+        #click_for_div {
+            grid-area: click_;
+        }
+
+        #click_for_div_to_hide {
+            grid-area: click_hide;
+        }
+        */
+
+        #break_for_about {
+            display: grid;
+            grid-area: b_for_about;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout .";
+            background-color: rgb(16, 141, 150);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+        }
+
+        #put_in_the_middle_about {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: pabout;
+        }
+        
+        /* CONTACT SECTION */
+        
+        .contact_grid {
+
+            display: grid;
+            grid-area: cont_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". cont cont cont cont cont cont cont cont cont cont."
+                ". dc dc dc dc dc dc dc dc dc dc ."
+                ". input_ input_ input_ input_ input_ input_ input_ input_ input_ input_ ."
+                ". tc tc tc tc tc tc tc tc tc tc ."
+                ". o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf ."
+                "b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        #contact_ {
+            grid-area: cont;
+            margin: 50px 0 0 0;
+            text-align: center;
+        }
+
+        #contact_ h1 {
+            font-size: 60px;
+            text-align: center;
+        }
+
+        #title_direct_con {
+            grid-area: dc;
+            border-bottom: 8px solid rgb(79, 88, 96);
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+
+        #title_try_contact {
+            grid-area: tc;
+            grid-auto-rows: minmax(50px, auto);
+            background-color: white;
+            border-bottom: 8px solid rgb(79, 88, 96);
+            text-align: center;
+            padding: 80px 0 20px 0;
+        }
+
+        #other_contact_info {
+            display: grid;
+            grid-area: o_con_inf;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "oth_con_eml oth_con_eml oth_con_eml oth_con_eml oth_con_eml oth_con_eml oth_con_eml oth_con_eml oth_con_eml oth_con_eml oth_con_eml oth_con_eml"
+                
+                "oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_"
+                
+                "oth_con_phne oth_con_phne oth_con_phne oth_con_phne oth_con_phne oth_con_phne oth_con_phne oth_con_phne oth_con_phne oth_con_phne oth_con_phne oth_con_phne"
+                
+                "oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_";
+            padding: 20px 0 0 0;
+        }
+        
+        #other_contact_email {
+            grid-area: oth_con_eml;
+            text-align: center;
+             text-decoration: underline;
+        }
+        
+        #other_contact_theemail {
+            grid-area: oth_con_eml_;
+            text-align: center;
+
+        }
+        
+        #other_contact_phone {
+            grid-area: oth_con_phne;
+            text-align: center;
+             text-decoration: underline;
+        }
+    
+        #other_contact_phone_ {
+            grid-area: oth_con_phne_;
+            text-align: center;
+
+        }
+        
+        
+        #email_ {
+            width: auto;
+        }
+
+        #comment_ {
+            width: auto;
+            height: 100px;
+        }
+
+        #the_form {
+            grid-area: input_;
+            background-color: white;
+            padding: 0 0 50px 0;
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+
+        #break_for_contact {
+            display: grid;
+            grid-area: b_contact_;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact .";
+            background-color: rgb(79, 88, 96);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+        }
+
+        #put_in_middle_contact {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: p_contact;
+        }
+   
+        #footer {
+            grid-area: fter;
+            height: 300px;
+            width: 100%;
+            background-color: rgb(40, 40, 40);
+        }
+}
+
+@media screen 
+    and (min-width: 375px)
+    and (max-width: 812px)
+    and (orientation: landscape){
+        
+        #main_grid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        grid-template-areas: 
+            "info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g"
+            "nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g"
+            "auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g"
+            "char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g"
+            "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
+            "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
+            "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
+            "fter fter fter fter fter fter fter fter fter fter fter fter";
+        }
+        
+        /* INFORMATION SECTION WITHIN MAIN GRID. */
+        
+        .info_grid {
+            display: grid;
+            grid-area: info_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(1px, auto);
+            grid-template-areas: 
+                ". . . num eml fb twit gith . . .";
+
+            background-color: rgb(40, 40, 40);
+            padding: 25px 0 0 0;
+            margin: 0 0 0 0;
+        }
+        
+        /* The links are set to white when user hasn't hovered over link. */
+        
+        div div > .anchor_tag {
+            color: #ffffff;
+        }
+        
+        /* The links are set to hotpink when user has hovered over. */
+        div a:hover {
+            color: rgb(127,127,127);
+        }
+
+        #number {
+            grid-area: num;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            width: 100px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        #email {
+            grid-area: eml;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            width: 100px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        #facebook {
+            grid-area: fb;
+            text-align: center;
+            padding: 0 0 0 0;
+            width: 100px;
+            font-size: 25px;
+        }
+
+        #twitter {
+            grid-area: twit;
+            text-align: center;
+            width: 100px;
+            font-size: 25px;
+        }
+
+        #github {
+            grid-area: gith;  
+            text-align: center;
+            padding: 0 0 0 0;
+            width: 100px;
+            font-size: 25px;
+        }
+        
+        /* NAVIGATION SECTION*/
+        
+        .nav_grid {
+            display: grid;
+            grid-area: nav_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". . hme . wrk . cont . abt . .";
+
+            padding: 0 0 20px 0;
+            margin: 0 0 0 0;
+            background-color: rgba(255, 255, 255, 0.9);
+
+        }
+        
+        div .anchor_tag {
+            text-decoration: none;
+            color: black;  
+        }
+        
+        h1 a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        #home {
+            grid-area: hme;
+            text-align: center;
+            padding: 20px 0 0 0;
+            font-size: 10px;
+            background-color: rgba(255, 255, 255, 0.68);
+        }
+
+
+        #work {
+            grid-area: wrk;
+            text-align: center;
+            padding: 20px 0 0 0;
+            font-size: 10px;
+            background-color: rgba(255, 255, 255, 0.76);
+        }
+
+
+        #about {
+            grid-area: abt;
+            text-align: center;
+            padding: 20px 0 0 0;
+            font-size: 10px;
+            background-color: rgba(255, 255, 255, 0.72);
+        }
+
+
+        #contact {
+            grid-area: cont;
+            text-align: center;
+            padding: 20px 0 0 0;
+            font-size: 10px;
+            background-color: rgba(255, 255, 255, 0.59);
+        }
+        
+        /* AUTHOR SECTION*/
+        
+        .author_grid {
+
+            display: grid;
+            grid-area: auth_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                "logo logo logo logo logo logo"
+                "name name name name name name"
+                ". . resume_ h_me . ."
+                ". . . . . .";
+
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            background-color: white;
+            /*background-color: rgba(0, 0, 0, 0.72);*/
+        }
+        
+        
+        #jm_logo_size {
+            height: 200px;
+            width: 200px;
+        }
+
+
+        #logo_placement {
+            grid-area: logo;
+            /*position: absolute;*/
+            text-align: center;
+            padding: 0 0 0 0;
+            margin: ;
+
+        }
+
+
+        #name_placement {
+            grid-area: name;
+            text-align: center;
+            padding: 0 0 0 0;
+            margin: ;
+
+        }
+
+        
+        #name_size {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 40px;
+            color: black;
+            letter-spacing: 5px;
+            /*text-shadow: 3px 3px black;*/
+        }
+
+
+        #resume {
+            grid-area: resume_;
+            text-align: center;
+        }
+
+
+        #resume h4 > a {
+            color: black;
+        }
+
+
+        #resume h4 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        #hire_me {
+            grid-area: h_me;
+            text-align: center;
+        }
+
+
+        #hire_me h4 > a {
+            color: black;
+        }
+
+
+        #hire_me h4 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+        
+        /* CHARACTER SECTION*/
+
+
+        .character_grid {
+
+            display: grid;
+            grid-area: char_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                "passion_ passion_ passion_ passion_ passion_ passion_ passion_ passion_ passion_ passion_ passion_ passion_"
+                "inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_ inspired_"
+                "adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_ adapt_";
+
+            padding: 70px 0 70px 0;
+            margin: 0 0 0 0;
+            background-color: rgb(40, 40, 40);
+
+
+        }
+
+
+        #passionate {
+            grid-area: passion_;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+
+        #inspired {
+            grid-area: inspired_;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+
+        #adaptable {
+            grid-area: adapt_;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        /*
+        .icon {
+            height: 100px;
+            width 100px;
+            color: white;
+        }
+        */
+        
+        
+        /* WORK SECTION*/
+        
+        .work_grid {
+
+            display: grid;
+            grid-area: work_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                "myW myW myW myW myW myW myW myW myW myW myW myW"
+                ". t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 ."
+                ". p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 ."
+                ". pinfo pinfo pinfo pinfo pinfo pinfo pinfo pinfo pinfo pinfo ."
+                ". pinfo2 pinfo2 pinfo2 pinfo2 pinfo2 pinfo2 pinfo2 pinfo2 pinfo2 pinfo2 ."
+                ". t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 ."
+                ". pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec ."
+                "bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+
+        #myWork {
+            padding: 100px 0 20px 0;
+            grid-area: myW;
+            text-align: center;
+            background-color: white;
+        }
+
+
+        #myWork h1 {
+            font-size: 60px;
+        }
+
+
+        #title1 {
+            grid-area: t1;
+            text-align: center;
+            background-color: #ffffff;  
+            border-bottom: 8px solid rgb(26, 106, 163);
+            padding: 30px 0 10px 0;
+        }
+
+
+        #title2 {
+            background-color: #ffffff;
+            grid-area: t2;
+            text-align: center;
+            border-bottom: 8px solid rgb(26, 106, 163);
+        }
+
+
+        #proj1 {
+            /*border-top: 8px solid rgba(255, 54, 247, 0.83);*/
+            grid-area: p1;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding: 0 0 20px 0;
+        }
+
+
+        #proj1Img {
+            /*border: 2px solid rgba(0, 0, 0, 0.72);*/
+            /*padding: 2px;*/
+            padding: 20px 0 20px 0;
+            height: auto;
+            width: 100%;
+
+        }
+
+
+        #p1_info {
+            grid-area: pinfo;
+            border: 2px solid black;
+            text-align: center;
+            
+        }
+
+
+        #p1_visit {
+            grid-area: pinfo2;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+
+        #projectSec {
+            /*background-color: aquamarine;*/
+            grid-area: pSec;
+            display: grid;
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                "p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2"
+                ". . . . . . . . . . . ."
+                "p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3";
+        }
+
+
+        #proj2 {
+            grid-area: p2;
+            height: auto;
+            width: auto;
+            text-align: center;
+            /*background-color: aqua;*/
+
+        }
+
+
+        #proj2Img {
+            /*border: 2px solid rgba(0, 0, 0, 0.72);*/
+            padding: 15px 0 0 0;
+            /*padding: 2px;*/
+            height: auto;
+            width: 100%;
+
+        }
+
+
+        #proj2 > a {
+            color: black;
+        }
+
+
+        #proj2 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        #proj3 {
+            grid-area: p3;
+            height: auto;
+            width: auto;
+            text-align: center;
+        }
+
+
+        #proj3Img {
+            /*border: 2px solid rgba(0, 0, 0, 0.72);*/
+            /*padding: 2px;*/
+            height: auto;
+            width: 100%;
+        }
+
+
+        #proj3 > a {
+            color: black;
+        }
+
+
+        #proj3 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        div h1 > .anchor_tag_breaks {
+            color: white;
+        }
+
+
+        #break_for_work {
+            display: grid;
+            grid-area: bforwork;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle .";
+            background-color: rgb(26, 106, 163);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+
+        }
+
+        #put_in_the_middle {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: pmiddle;
+        }
+        
+        
+        /* ABOUT SECTION */
+        
+        
+        #about_grid {
+            display: grid;
+            grid-area: about_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me ."
+                ". summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ ." 
+                ". desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about ."
+                ". tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ ."
+                ". l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec ."
+                "b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #about_me {
+            grid-area: abt_me;
+            margin: 50px 0 0 0;
+            text-align: center;
+        }
+
+        #about_me h1 {
+            font-size: 60px;
+        }
+
+        #summary_ {
+            grid-area: summ_;
+            border-bottom: 8px solid rgb(16, 141, 150);
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+
+        #tech_ex {
+            grid-area: tech_;
+            border-bottom: 8px solid rgb(16, 141, 150);
+            text-align: center;
+            padding: 50px 0 20px 0;
+        }
+
+        #description_about {
+            grid-area: desc_about;
+            padding: 20px 0 20px 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+            text-align: left;
+        }
+
+        #lang_sec{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 0px;
+            
+            grid-template-areas: 
+                "lprograming lprograming lprograming lprograming lprograming lprograming langs_ langs_ langs_ langs_ langs_ langs_"
+                "libs_ libs_ libs_ libs_ libs_ libs_ the_libs the_libs the_libs the_libs the_libs the_libs";
+            grid-auto-rows: minmax(10px, auto);
+            grid-area: l_sec;
+            margin: 0 0 0 0;
+            padding: 20px 0 20px 0;
+            text-align: center;
+
+        }
+        
+        #lang_programming {
+            grid-area: lprograming;
+            text-align: left;
+        }
+        
+        #languages_ {
+            grid-area: langs_;
+            text-align: left;
+        }
+        
+        #libraries_ {
+            grid-area: libs_;
+            text-align: left;
+            /*padding: 0 0 0 30px;*/
+        }
+        
+        #the_libraries {
+            grid-area: the_libs;
+            text-align: left;
+        }
+        /*
+        #see_more {
+            grid-area: c_more;
+        }
+
+        #click_for_div {
+            grid-area: click_;
+        }
+
+        #click_for_div_to_hide {
+            grid-area: click_hide;
+        }
+        */
+
+        #break_for_about {
+            display: grid;
+            grid-area: b_for_about;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout .";
+            background-color: rgb(16, 141, 150);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+        }
+
+        #put_in_the_middle_about {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: pabout;
+        }
+        
+        /* CONTACT SECTION */
+        
+        .contact_grid {
+
+            display: grid;
+            grid-area: cont_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". cont cont cont cont cont cont cont cont cont cont."
+                ". dc dc dc dc dc dc dc dc dc dc ."
+                ". input_ input_ input_ input_ input_ input_ input_ input_ input_ input_ ."
+                ". tc tc tc tc tc tc tc tc tc tc ."
+                ". o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf ."
+                "b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        #contact_ {
+            grid-area: cont;
+            margin: 50px 0 0 0;
+            text-align: center;
+        }
+
+        #contact_ h1 {
+            font-size: 60px;
+            text-align: center;
+        }
+
+        #title_direct_con {
+            grid-area: dc;
+            border-bottom: 8px solid rgb(79, 88, 96);
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+
+        #title_try_contact {
+            grid-area: tc;
+            grid-auto-rows: minmax(50px, auto);
+            background-color: white;
+            border-bottom: 8px solid rgb(79, 88, 96);
+            text-align: center;
+            padding: 80px 0 20px 0;
+        }
+
+        #other_contact_info {
+            display: grid;
+            grid-area: o_con_inf;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                ". . oth_con_eml oth_con_eml oth_con_eml oth_con_eml . oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_ oth_con_eml_"
+                ". . oth_con_phne oth_con_phne oth_con_phne oth_con_phne . oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_ oth_con_phne_";
+            padding: 20px 0 0 0;
+        }
+        
+        #other_contact_email {
+            grid-area: oth_con_eml;
+            text-align: left;
+        }
+        
+        #other_contact_theemail {
+            grid-area: oth_con_eml_;
+            text-align: left;
+            padding: 0 0 0 40px;
+        }
+        
+        #other_contact_phone {
+            grid-area: oth_con_phne;
+            text-align: left;
+        }
+    
+        #other_contact_phone_ {
+            grid-area: oth_con_phne_;
+            text-align: left;
+            padding: 0 0 0 40px;
+        }
+        
+        
+        #email_ {
+            width: 500px;
+        }
+
+        #comment_ {
+            width: 500px;
+            height: 200px;
+        }
+
+        #the_form {
+            grid-area: input_;
+            background-color: white;
+            padding: 0 0 50px 0;
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+
+        #break_for_contact {
+            display: grid;
+            grid-area: b_contact_;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact .";
+            background-color: rgb(79, 88, 96);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+        }
+
+        #put_in_middle_contact {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: p_contact;
+        }
+   
+        #footer {
+            grid-area: fter;
+            height: 300px;
+            width: 100%;
+            background-color: rgb(40, 40, 40);
+        }
+}
+
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+
+@media screen 
+    and (min-width: 414px)
+    and (min-width: 736px){
+        
+}
+
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */
+/* IPHONE 6/7/8 PLUS */

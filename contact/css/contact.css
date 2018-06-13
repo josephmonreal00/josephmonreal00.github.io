@@ -1,0 +1,226 @@
+/* STYLESHEET FOR ABOUT.CSS */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#workcontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_ b_hme_"
+        "title_ title_ title_ title_ title_ title_ title_ title_ title_ title_ title_ title_"
+        "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
+        "fter fter fter fter fter fter fter fter fter fter fter fter";
+    grid-auto-rows: minmax(30px, auto);
+    grid-gap: 0px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+#back_home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". w_b_hme . . . . . . . . .";
+    background-color: white;
+    grid-area: b_hme_;
+}
+
+#within_back_home {
+    padding: 10px 0 0 0;
+    grid-area: w_b_hme;
+    height: 30px;
+}
+
+div h4 > a {
+    color: black;
+}
+
+div h4 > a:hover {
+    color: rgb(79, 88, 96);
+}
+
+#title {
+    grid-area: title_;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-auto-rows: minmax(30px, auto);
+    grid-template-areas: 
+        ". m_work m_work m_work m_work m_work . . . . . .";
+    
+    height: 200px;
+    background-color: rgb(79, 88, 96);
+}
+
+#my_work {
+    grid-area: m_work;
+    font-size: 70px;
+    color: white;
+}
+
+
+.contact_grid {
+    
+    display: grid;
+    grid-area: cont_g;
+    
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+        ". cont cont cont cont cont . . . . . ."
+        ". dc dc dc dc dc dc dc . tc tc ."
+        ". input_ input_ input_ input_ input_ input_ input_ . o_con_inf o_con_inf ."
+        "b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_";
+    
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#contact_ {
+    grid-area: cont;
+    margin: 50px 0 0 0;
+}
+
+#contact_ h1 {
+    font-size: 60px;
+}
+
+#title_direct_con {
+    grid-area: dc;
+    border-bottom: 8px solid rgb(79, 88, 96);
+}
+
+#title_try_contact {
+    grid-area: tc;
+    grid-auto-rows: minmax(50px, auto);
+    background-color: white;
+    border-bottom: 8px solid rgb(79, 88, 96);
+}
+
+#other_contact_info {
+    grid-area: o_con_inf;
+    background-color: white;
+}
+
+#email_ {
+    width: 800px;
+}
+
+#comment_ {
+    width: 800px;
+    height: 200px;
+}
+
+#the_form {
+    grid-area: input_;
+    background-color: white;
+    padding: 20px 0 50px 0;
+}
+
+
+
+#footer {
+    display: grid;
+    grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(40px, auto);
+    grid-area: fter;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(79, 88, 96);
+    grid-template-areas: 
+        ". . . . . . . . . . . ."
+        "f_img_ f_img_ f_wrk_ f_wrk_ f_abt_ f_abt_ f_con_ f_con_ f_res_ f_res_ f_hire_ f_hire_";
+}
+
+#footer_img {
+    grid-area: f_img_;
+    height: 150px;
+    width: 150px;
+    padding: 0 0 20px 50px;
+    margin: 0 auto;
+}
+
+#footer_img_ {
+    margin: 0 auto;
+    height: inherit;
+    width: inherit;
+}
+
+#footer_work {
+    grid-area: f_wrk_;
+    padding: 40px 0 0 0;
+}
+
+#footer_work h4 > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_work h4 > a:hover {
+    color: black;
+}
+
+#footer_about {
+    grid-area: f_abt_;
+    padding: 40px 0 0 0;
+}
+
+#footer_about h4 > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_about h4 > a:hover {
+    color: black;
+}
+
+#footer_contact {
+    grid-area: f_con_;
+    padding: 40px 0 0 0;
+}
+
+#footer_contact h4 > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_contact h4 > a:hover {
+    color: black;
+}
+
+#footer_resume {
+    grid-area: f_res_;
+    padding: 40px 0 0 0;
+}
+
+#footer_resume h4 > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_resume h4 > a:hover {
+    color: black;
+}
+
+#footer_hireme {
+    grid-area: f_hire_;
+    padding: 40px 0 0 0;
+}
+
+#footer_hireme h4 > a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_hireme h4 > a:hover {
+    color: black;
+}
