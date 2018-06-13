@@ -488,6 +488,10 @@ div h1 > .anchor_tag_breaks {
     color: white;
 }
 
+.size_other_projs {
+    font-size: 20px;
+}
+
 
 #break_for_work {
     display: grid;
@@ -854,7 +858,8 @@ div h1 > .anchor_tag_breaks {
                 "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
                 "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
                 "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
-                "fter fter fter fter fter fter fter fter fter fter fter fter";
+                "fter fter fter fter fter fter fter fter fter fter fter fter"
+                "scroll_to_top scroll_to_top scroll_to_top scroll_to_top scroll_to_top scroll_to_top scroll_to_top scroll_to_top scroll_to_top scroll_to_top scroll_to_top scroll_to_top";
         }
 
         /* INFORMATION SECTION WITHIN MAIN GRID. */
@@ -939,34 +944,244 @@ div h1 > .anchor_tag_breaks {
             height: 130px;
             margin: 50px 0 0 0;
             padding: 20px;
+        }
+        
+        /* WORK SECTION*/
 
-    }
+        .work_grid {
+
+            display: grid;
+            grid-area: work_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(100px, auto);
+            grid-template-areas: 
+                ". myW myW myW myW myW myW myW myW myW myW ."
+                ". t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 ."
+                ". p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 ."
+                ". pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec ."
+                "bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+
+        #myWork {
+            margin: 50px 0 0 0;
+            grid-area: myW;
+            /*text-align: center;*/
+            background-color: white;
+        }
+
+
+        #myWork h1 {
+            font-size: 60px;
+        }
+
+
+        #title1 {
+            grid-area: t1;
+            background-color: #ffffff;  
+            border-bottom: 8px solid rgb(26, 106, 163);
+            margin: 0 0 50px 0;
+            font-size: 30px;
+        }
+
+
+        #title2 {
+            background-color: #ffffff;
+            grid-area: t2;
+            border-bottom: 8px solid rgb(26, 106, 163);
+            font-size: 30px;
+        }
+
+
+        #proj1 {
+            /*border-top: 8px solid rgba(255, 54, 247, 0.83);*/
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_"
+                "p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit"
+                "p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_"
+                "pinfo pinfo . pinfo2 pinfo2 . . . . . . .";
+            grid-area: p1;
+            background-color: white;
+        }
+
+
+        #proj1Img {
+            height: 500px;
+            width: 100%;  
+            grid-area: p1_img_;
+            border: 1px solid black;
+        }
+
+        #p1_img_title_ {
+            grid-area: p1img_tit;
+        }
+
+        #p1_img_desciption_ {
+            grid-area: p1img_desc_;
+        }
+
+
+        #p1_info {
+            grid-area: pinfo;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+
+        #p1_visit {
+            grid-area: pinfo2;
+            border: 2px solid black;
+            text-align: center;
+            margin: 0 0 0 5px;
+        }
+
+
+        #projectSec {
+            /*background-color: aquamarine;*/
+            grid-area: pSec;
+            display: grid;
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". . . . . . . . . . . ."
+                "p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2"
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                "p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3"
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . .";
+        }
+
+
+        #proj2 {
+            grid-area: p2;
+            height: auto;
+            width: auto;
+
+        }
+
+
+        #proj2Img {
+            padding: 15px 0 0 0;
+            height: 500px;
+            width: 100%;
+            border: 1px solid black;
+            
+        }
+
+
+        #proj2 > a {
+            color: black;
+        }
+
+
+        #proj2 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        #proj3 {
+            grid-area: p3;
+            height: auto;
+            width: auto;
+        }
+
+
+        #proj3Img {
+            height: 500px;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+
+        #proj3 > a {
+            color: black;
+        }
+
+
+        #proj3 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        div h1 > .anchor_tag_breaks {
+            color: white;
+        }
         
-    #break_for_about {
-        display: grid;
-        grid-area: b_for_about;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-rows: minmax(10px, auto);
-        grid-template-areas: 
-            "pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout";
-        background-color: rgb(16, 141, 150);
-        height: 130px;
-        margin: 50px 0 0 0;
-        padding: 20px;
-    }
+        .size_other_projs {
+            font-size: 30px;
+        }
+
+
+        #break_for_work {
+            display: grid;
+            grid-area: bforwork;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". . . . pmiddle pmiddle pmiddle pmiddle . . . .";
+            background-color: rgb(26, 106, 163);
+            height: 130px;
+            margin: 0 0 0 0;
+            padding: 20px;
+
+        }
+
+        #put_in_the_middle {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: pmiddle;
+        }
+
+        #break_for_about {
+            display: grid;
+            grid-area: b_for_about;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                "pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout";
+            background-color: rgb(16, 141, 150);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+            }
+
+            #break_for_contact {
+            display: grid;
+            grid-area: b_contact_;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact .";
+            background-color: rgb(79, 88, 96);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+        }
         
-    #break_for_contact {
-        display: grid;
-        grid-area: b_contact_;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-rows: minmax(10px, auto);
-        grid-template-areas: 
-            ". p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact .";
-        background-color: rgb(79, 88, 96);
-        height: 130px;
-        margin: 50px 0 0 0;
-        padding: 20px;
-    }
+        #scroll_to_top {
+            grid-area: scroll_to_top;
+        }
 }
 
 /* BETWEEN IPAD AND DESKTOP VIEW */
@@ -1063,557 +1278,1066 @@ div h1 > .anchor_tag_breaks {
 /* IPAD */
 @media screen 
     and (min-width: 768px)
-    and (max-width: 1024px){
-    
-    /*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
-    #main_grid {
-    
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-rows: minmax(50px, auto);
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-        grid-template-areas: 
-            "info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g"
-            "nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g"
-            "auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g"
-            "char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g"
-            "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
-            "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
-            "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
-            "fter fter fter fter fter fter fter fter fter fter fter fter";
-    }
+    and (max-width: 1024px)
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1){
+        
+        #main_grid {
 
-    /* INFORMATION SECTION WITHIN MAIN GRID. */
-
-
-    .info_grid {
-
-        display: grid;
-        grid-area: info_g;
-
-        grid-gap: 0;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-        grid-auto-rows: minmax(10px, auto);
-        grid-template-areas: 
-            "num num eml eml . . . . . fb twit gith";
-
-        background-color: rgb(40, 40, 40);
-        padding: 25px 0 0 0;
-        margin: 0 0 0 0;
-    }
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(50px, auto);
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            grid-template-areas: 
+                "info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g"
+                "nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g"
+                "auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g"
+                "char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g"
+                "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
+                "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
+                "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
+                "fter fter fter fter fter fter fter fter fter fter fter fter"
+                "stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop";
+        }
+        /* WORK SECTION*/
 
 
-    /* The links are set to white when user hasn't hovered over link. */
+        .work_grid {
+
+            display: grid;
+            grid-area: work_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(100px, auto);
+            grid-template-areas: 
+                ". myW myW myW myW myW myW myW myW myW myW ."
+                ". t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 ."
+                ". p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 ."
+                ". pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec ."
+                "bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+
+        }
 
 
-    div div > .anchor_tag {
-        color: #ffffff;
-    }
+        #myWork {
+            margin: 50px 0 0 0;
+            grid-area: myW;
+            background-color: white;
+        }
 
 
-    /* The links are set to hotpink when user has hovered over. */
+        #myWork h1 {
+            font-size: 80px;
+        }
 
-    div a:hover {
-        color: rgb(127,127,127);
-    }
 
-    #number {
-        grid-area: num;
-        padding: 0 0 0 0;
-    }
-    
-    #number a {
-        font-size: 25px;
-    }
+        #title1 {
+            grid-area: t1;
+            background-color: #ffffff;  
+            border-bottom: 8px solid rgb(26, 106, 163);
+            margin: 0 0 50px 0;
+            font-size: 30px;
+        }
 
-    #email {
-        grid-area: eml;
-        padding: 0 0 0 0;
-    }
-    
-    #email a {
-        padding: 0 0 0 0;
-        font-size: 25px;
-    }
 
-    #facebook {
-        grid-area: fb;
-        padding: 0 0 0 0;
-        font-size: 25px;
-    }
+        #title2 {
+            background-color: #ffffff;
+            grid-area: t2;
+            border-bottom: 8px solid rgb(26, 106, 163);
+            font-size: 50px;
+        }
 
-    #twitter {
-        grid-area: twit;
-        font-size: 25px;
-    }
 
-    #github {
-        grid-area: gith;  
-        padding: 0 0 0 0;
-        font-size: 25px;
-    }
+        #proj1 {
+            /*border-top: 8px solid rgba(255, 54, 247, 0.83);*/
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_"
+                "p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit"
+                "p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_"
+                ". . pinfo pinfo pinfo pinfo pinfo2 pinfo2 pinfo2 pinfo2 . .";
+            grid-area: p1;
+            background-color: white;
+        }
+
+
+        #proj1Img {
+            height: 300px;
+            width: 100%;  
+            grid-area: p1_img_;
+            border: 1px solid black;
+        }
+
+        #p1_img_title_ {
+            grid-area: p1img_tit;
+        }
+
+        #p1_img_desciption_ {
+            grid-area: p1img_desc_;
+        }
+
+
+        #p1_info {
+            grid-area: pinfo;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+
+        #p1_visit {
+            grid-area: pinfo2;
+            border: 2px solid black;
+            text-align: center;
+            margin: 0 0 0 5px;
+        }
+
+
+        #projectSec {
+            /*background-color: aquamarine;*/
+            grid-area: pSec;
+            display: grid;
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". . . . . . . . . . . ."
+                "p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2"
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                "p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3"
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . .";
+        }
+
+
+        #proj2 {
+            grid-area: p2;
+            height: auto;
+            width: auto;
+
+        }
+
+
+        #proj2Img {
+            padding: 15px 0 0 0;
+            height: 300px;
+            width: 100%;
+            border: 1px solid black;
+            
+        }
+
+
+        #proj2 > a {
+            color: black;
+        }
+
+
+        #proj2 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        #proj3 {
+            grid-area: p3;
+            height: auto;
+            width: auto;
+        }
+
+
+        #proj3Img {
+            height: 300px;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+
+        #proj3 > a {
+            color: black;
+        }
+
+
+        #proj3 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        div h1 > .anchor_tag_breaks {
+            color: white;
+        }
+        
+        .size_other_projs {
+            font-size: 40px;
+        }
+
+
+        #break_for_work {
+            display: grid;
+            grid-area: bforwork;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". . . pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle . . .";
+            background-color: rgb(26, 106, 163);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+
+        }
+
+        #put_in_the_middle {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: pmiddle;
+        }
+        
+        #about_grid {
+            display: grid;
+            grid-area: about_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me ."
+                ". summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ ."
+                ". desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about ."
+                ". tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ ."
+                "l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec"
+                "b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #about_me {
+            grid-area: abt_me;
+            margin: 0 0 0 0;
+            text-align: center;
+        }
+
+        #about_me h1 {
+            font-size: 50px;
+        }
+
+        #summary_ {
+            text-align: center;
+            grid-area: summ_;
+            border-bottom: 8px solid rgb(16, 141, 150);
+        }
+
+        #tech_ex {
+            grid-area: tech_;
+            border-bottom: 8px solid rgb(16, 141, 150);
+            text-align: center;
+        }
+
+        #description_about {
+            grid-area: desc_about;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        #lang_sec{
+            grid-area: l_sec;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            text-align: center;
+
+        }
+
+        #break_for_about {
+            display: grid;
+            grid-area: b_for_about;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                "pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout";
+            background-color: rgb(16, 141, 150);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+        }
+
+        #put_in_the_middle_about {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: pabout;
+        }
+
+
+        /* CONTACT SECTION */
+
+
+        .contact_grid {
+
+            display: grid;
+            grid-area: cont_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". cont cont cont cont cont cont cont cont cont cont ."
+                ". dc dc dc dc dc dc dc dc dc dc ."
+                ". input_ input_ input_ input_ input_ input_ input_ input_ input_ input_ ."
+                ". tc tc tc tc tc tc tc tc tc tc ."
+                ". o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf ."
+                "b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        #contact_ {
+            grid-area: cont;
+            margin: 50px 0 0 0;
+            text-align: center;
+        }
+
+        #contact_ h1 {
+            font-size: 60px;
+        }
+
+        #title_direct_con {
+            grid-area: dc;
+            text-align: center;
+            border-bottom: 8px solid rgb(79, 88, 96);
+            padding: 0 0 0 0;
+        }
+
+        #title_try_contact {
+            grid-area: tc;
+            grid-auto-rows: minmax(50px, auto);
+            background-color: white;
+            border-bottom: 8px solid rgb(79, 88, 96);
+            text-align: center;
+        }
+
+        #other_contact_info {
+            grid-area: o_con_inf;
+            text-align: center;
+        }
+
+        #email_ {
+            width: 400px;
+        }
+
+        #comment_ {
+            width: 400px;
+            height: 200px;
+        }
+
+        #the_form {
+            text-align: center;
+            grid-area: input_;
+            background-color: white;
+            padding: 15px 0 15px 0;
+        }
+
+        #break_for_contact {
+            display: grid;
+            grid-area: b_contact_;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact .";
+            background-color: rgb(79, 88, 96);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+        }
+        
+        #put_in_middle_contact {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: p_contact;
+        }
+        
+        #footer {
+            display: grid;
+            grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(40px, auto);
+            grid-area: fter;
+            height: 300px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            grid-template-areas: 
+                ". . . . . . . . . . . ."
+                "f_img_ f_img_ f_wrk_ f_wrk_ f_abt_ f_abt_ f_con_ f_con_ f_res_ f_res_ f_hire_ f_hire_";
+        }
+
+        #footer_img {
+            grid-area: f_img_;
+            height: 150px;
+            width: 150px;
+            padding: 0 0 20px 50px;
+            margin: 0 auto;
+        }
+
+        #footer_img_ {
+            margin: 0 auto;
+            height: inherit;
+            width: inherit;
+        }
+
+        #footer_work {
+            grid-area: f_wrk_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_about {
+            grid-area: f_abt_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_contact {
+            grid-area: f_con_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_resume {
+            grid-area: f_res_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_hireme {
+            grid-area: f_hire_;
+            padding: 40px 0 0 0;
+        }
+
+        #scroll_to_top{ 
+            grid-area: stotop_stop;
+        }
+        
+        
+}
+@media screen 
+    and (min-width: 768px)
+    and (max-width: 1024px)
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 2){ /*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+        #main_grid {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(50px, auto);
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            grid-template-areas: 
+                "info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g info_g"
+                "nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g nav_g"
+                "auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g auth_g"
+                "char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g char_g"
+                "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
+                "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
+                "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
+                "fter fter fter fter fter fter fter fter fter fter fter fter"
+                "stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop";
+        }
+
+        /* INFORMATION SECTION WITHIN MAIN GRID. */
+
+
+        .info_grid {
+
+            display: grid;
+            grid-area: info_g;
+
+            grid-gap: 0;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                "num num eml eml . . . . . fb twit gith";
+
+            background-color: rgb(40, 40, 40);
+            padding: 25px 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+
+        /* The links are set to white when user hasn't hovered over link. */
+
+
+        div div > .anchor_tag {
+            color: #ffffff;
+        }
+
+
+        /* The links are set to hotpink when user has hovered over. */
+
+        div a:hover {
+            color: rgb(127,127,127);
+        }
+
+        #number {
+            grid-area: num;
+            padding: 0 0 0 0;
+        }
+
+        #number a {
+            font-size: 25px;
+        }
+
+        #email {
+            grid-area: eml;
+            padding: 0 0 0 0;
+        }
+
+        #email a {
+            padding: 0 0 0 0;
+            font-size: 25px;
+        }
+
+        #facebook {
+            grid-area: fb;
+            padding: 0 0 0 0;
+            font-size: 25px;
+        }
+
+        #twitter {
+            grid-area: twit;
+            font-size: 25px;
+        }
+
+        #github {
+            grid-area: gith;  
+            padding: 0 0 0 0;
+            font-size: 25px;
+        }
         
 
-    /* NAVIGATION SECTION*/
+        /* NAVIGATION SECTION*/
 
 
-    .nav_grid {
+        .nav_grid {
 
-        display: grid;
-        grid-area: nav_g;
+            display: grid;
+            grid-area: nav_g;
 
-        grid-gap: 0px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
-        grid-auto-rows: minmax(50px, auto);
-        grid-template-areas: 
-            "hme hme wrk wrk abt abt cont cont";
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                "hme hme wrk wrk abt abt cont cont";
 
-        padding: 0 0 20px 0;
-        margin: 0 0 0 0;
-        background-color: rgba(255, 255, 255, 0.9);
+            padding: 0 0 20px 0;
+            margin: 0 0 0 0;
+            background-color: rgba(255, 255, 255, 0.9);
 
-    }
-
-
-    div .anchor_tag {
-        text-decoration: none;
-        color: black;  
-    }
+        }
 
 
-    h1 a:hover {
-        color: rgb(124, 124, 124);
-    }
+        div .anchor_tag {
+            text-decoration: none;
+            color: black;  
+        }
 
 
-    #home {
-        grid-area: hme;
-        text-align: center;
-        padding: 20px 0 0 0;
-        background-color: rgba(255, 255, 255, 0.68);
-    }
+        h1 a:hover {
+            color: rgb(124, 124, 124);
+        }
 
 
-    #work {
-        grid-area: wrk;
-        text-align: center;
-        padding: 20px 0 0 0;
-        background-color: rgba(255, 255, 255, 0.76);
-    }
+        #home {
+            grid-area: hme;
+            text-align: center;
+            padding: 20px 0 0 0;
+            background-color: rgba(255, 255, 255, 0.68);
+        }
 
 
-    #about {
-        grid-area: abt;
-        text-align: center;
-        padding: 20px 0 0 0;
-        background-color: rgba(255, 255, 255, 0.72);
-    }
+        #work {
+            grid-area: wrk;
+            text-align: center;
+            padding: 20px 0 0 0;
+            background-color: rgba(255, 255, 255, 0.76);
+        }
 
 
-    #contact {
-        grid-area: cont;
-        text-align: center;
-        padding: 20px 0 0 0;
-        background-color: rgba(255, 255, 255, 0.59);
-    }
+        #about {
+            grid-area: abt;
+            text-align: center;
+            padding: 20px 0 0 0;
+            background-color: rgba(255, 255, 255, 0.72);
+        }
 
 
-    /* WORK SECTION*/
+        #contact {
+            grid-area: cont;
+            text-align: center;
+            padding: 20px 0 0 0;
+            background-color: rgba(255, 255, 255, 0.59);
+        }
 
 
-    .work_grid {
+        /* WORK SECTION*/
 
-        display: grid;
-        grid-area: work_g;
 
-        grid-gap: 0px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        .work_grid {
 
-        grid-auto-rows: minmax(50px, auto);
-        grid-template-areas: 
-            ". . myW myW myW myW myW myW myW myW . ."
+            display: grid;
+            grid-area: work_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(100px, auto);
+            grid-template-areas: 
+                ". myW myW myW myW myW myW myW myW myW myW ."
+                ". t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 ."
+                ". p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 ."
+                ". pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec ."
+                "bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+
+        }
+
+
+        #myWork {
+            margin: 50px 0 0 0;
+            grid-area: myW;
+            background-color: white;
+        }
+
+
+        #myWork h1 {
+            font-size: 80px;
+        }
+
+
+        #title1 {
+            grid-area: t1;
+            background-color: #ffffff;  
+            border-bottom: 8px solid rgb(26, 106, 163);
+            margin: 0 0 50px 0;
+            font-size: 30px;
+        }
+
+
+        #title2 {
+            background-color: #ffffff;
+            grid-area: t2;
+            border-bottom: 8px solid rgb(26, 106, 163);
+            font-size: 50px;
+        }
+
+
+        #proj1 {
+            /*border-top: 8px solid rgba(255, 54, 247, 0.83);*/
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_ p1_img_"
+                "p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit p1img_tit"
+                "p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_ p1img_desc_"
+                ". . . . pinfo pinfo pinfo2 pinfo2 . . . .";
+            grid-area: p1;
+            background-color: white;
+        }
+
+
+        #proj1Img {
+            height: 400px;
+            width: 100%;  
+            grid-area: p1_img_;
+            border: 1px solid black;
+        }
+
+        #p1_img_title_ {
+            grid-area: p1img_tit;
+        }
+
+        #p1_img_desciption_ {
+            grid-area: p1img_desc_;
+        }
+
+
+        #p1_info {
+            grid-area: pinfo;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+
+        #p1_visit {
+            grid-area: pinfo2;
+            border: 2px solid black;
+            text-align: center;
+            margin: 0 0 0 5px;
+        }
+
+
+        #projectSec {
+            /*background-color: aquamarine;*/
+            grid-area: pSec;
+            display: grid;
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". . . . . . . . . . . ."
+                "p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2"
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                "p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3"
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . ."
+                ". . . . . . . . . . . .";
+        }
+
+
+        #proj2 {
+            grid-area: p2;
+            height: auto;
+            width: auto;
+
+        }
+
+
+        #proj2Img {
+            padding: 15px 0 0 0;
+            height: 400px;
+            width: 100%;
+            border: 1px solid black;
             
-            ". t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 ."
-            
-            ". p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 ."
-            
-            ". . . . pinfo pinfo pinfo2 pinfo2 . . . . "
-            ". t2 t2 t2 t2 t2 t2 t2 t2 t2 t2 ."
-            "pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec pSec"
-            "bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork bforwork";
-
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-        background-color: rgb(255, 255, 255);
-
-    }
-
-
-    #myWork {
-        margin: 50px 0 0 0;
-        grid-area: myW;
-        text-align: center;
-        background-color: white;
-    }
-
-
-    #myWork h1 {
-        font-size: 40px;
-        font-weight: bolder;
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-    }
-
-
-    #title1 {
-        grid-area: t1;
-        border-bottom: 8px solid rgb(26, 106, 163);
-        background-color: #ffffff;
-        text-align: center;
-        padding: 20px 0 20px 0;
-        margin: 0 0 0 0;
-    }
-    
-    #title1 h2 {
-        font-size: 30px;
-    }
-
-
-    #title2 {
-        background-color: #ffffff;
-        grid-area: t2;
-        text-align: center;
-        padding: 50px 0 0 0;
-        margin: 20px 0 0 0;
-        border-bottom: 8px solid rgb(26, 106, 163);
-    }
-    
-    #title2 h2 {
-        font-size: 30px;
-        padding: 0 0 20px 0;
-    }
-
-
-    #proj1 {
-        grid-area: p1;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0 0 0;
-    }
-
-
-    #proj1Img {
-        padding: 0 0 0 0;
-        height: auto;
-        width: 100%;
-        /*border: 1px solid rgb(0, 0, 0);*/
-    }
-
-
-    #p1_info {
-        grid-area: pinfo;
-        border: 2px solid black;
-        text-align: center;
-        padding: 0 0 0 0;
-        margin: 10px 0 0 0;
-    }
-
-
-    #p1_visit {
-        grid-area: pinfo2;
-        border: 2px solid black;
-        text-align: center;
-        margin: 10px 0 0 1px;
-        padding: 0 0 0 0;
-    }
-
-
-    #projectSec {
-        grid-area: pSec;
-        display: grid;
-        grid-gap: 0px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-rows: minmax(10px, auto);
-        grid-template-areas: 
-            ". . . p2 p2 p2 p2 p2 p2 . . ."
-            ". . . . . . . . . . . ."
-            ". . . p3 p3 p3 p3 p3 p3 . . .";
-    }
-
-
-    #proj2 {
-        grid-area: p2;
-        height: auto;
-        width: auto;
-      
-        text-align: center;
-        margin: 60px 0 0 0;
-    }
-
-
-    #proj2Img {
-        height: 250px;
-        width: 100%;
-        /*border: 1px solid rgb(0, 0, 0);*/
-    }
-
-
-    #proj2 > a {
-        color: black;
-    }
-
-
-    #proj2 > a:hover {
-        color: rgb(124, 124, 124);
-    }
-
-
-    #proj3 {
-        grid-area: p3;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-    }
-
-
-    #proj3Img {
-        height: 250px;
-        width: 100%;
-        margin: 60px 0 0 0;
-        /*border: 1px solid rgb(0, 0, 0);*/
-    }
-
-
-    #proj3 > a {
-        color: black;
-    }
-
-
-    #proj3 > a:hover {
-        color: rgb(124, 124, 124);
-    }
-
-
-    div h1 > .anchor_tag_breaks {
-        color: white;
-    }
-
-
-    #break_for_work {
-        display: grid;
-        grid-area: bforwork;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-rows: minmax(10px, auto);
-        grid-template-areas: 
-            ". . . pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle . . .";
-        background-color: rgb(26, 106, 163);
-        height: 130px;
-        margin: 50px 0 0 0;
-        padding: 20px;
-
-    }
-
-    #put_in_the_middle {
-        margin: auto;
-        padding: 20px;
-        background-color: white;
-        grid-area: pmiddle;
-    }
-    
-    
-    /*--------------------------*/
-    #about_grid {
-        display: grid;
-        grid-area: about_g;
-
-        grid-gap: 0px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-        grid-auto-rows: minmax(50px, auto);
-        grid-template-areas: 
-            ". abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me ."
-            ". summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ ."
-            ". desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about ."
-            ". tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ ."
-            "l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec"
-            "b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about";
-
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-        background-color: rgb(255, 255, 255);
-    }
-
-    #about_me {
-        grid-area: abt_me;
-        margin: 0 0 0 0;
-        text-align: center;
-    }
-
-    #about_me h1 {
-        font-size: 50px;
-    }
-
-    #summary_ {
-        text-align: center;
-        grid-area: summ_;
-        border-bottom: 8px solid rgb(16, 141, 150);
-    }
-
-    #tech_ex {
-        grid-area: tech_;
-        border-bottom: 8px solid rgb(16, 141, 150);
-        text-align: center;
-    }
-
-    #description_about {
-        grid-area: desc_about;
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-        background-color: rgb(255, 255, 255);
-        text-align: center;
-    }
-
-    #lang_sec{
-        grid-area: l_sec;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-        text-align: center;
-
-    }
-    
-    /*
-    #see_more {
-        grid-area: c_more;
-    }
-    
-    
-    #click_for_div {
-        grid-area: click_;
-    }
-
-    #click_for_div_to_hide {
-        grid-area: click_hide;
-    }
-    */
-
-    #break_for_about {
-        display: grid;
-        grid-area: b_for_about;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-rows: minmax(10px, auto);
-        grid-template-areas: 
-            "pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout";
-        background-color: rgb(16, 141, 150);
-        height: 130px;
-        margin: 50px 0 0 0;
-        padding: 20px;
-    }
-
-    #put_in_the_middle_about {
-        margin: auto;
-        padding: 20px;
-        background-color: white;
-        grid-area: pabout;
-    }
-    
-    
-    /* CONTACT SECTION */
-
-
-    .contact_grid {
-
-        display: grid;
-        grid-area: cont_g;
-
-        grid-gap: 0px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-        grid-auto-rows: minmax(50px, auto);
-        grid-template-areas: 
-            ". cont cont cont cont cont cont cont cont cont cont ."
-            ". dc dc dc dc dc dc dc dc dc dc ."
-            ". input_ input_ input_ input_ input_ input_ input_ input_ input_ input_ ."
-            ". tc tc tc tc tc tc tc tc tc tc ."
-            ". o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf ."
-            "b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_";
-
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-        background-color: rgb(255, 255, 255);
-    }
-
-
-    #contact_ {
-        grid-area: cont;
-        margin: 50px 0 0 0;
-        text-align: center;
-    }
-
-    #contact_ h1 {
-        font-size: 60px;
-    }
-
-    #title_direct_con {
-        grid-area: dc;
-        text-align: center;
-        border-bottom: 8px solid rgb(79, 88, 96);
-        padding: 0 0 0 0;
-    }
-
-    #title_try_contact {
-        grid-area: tc;
-        grid-auto-rows: minmax(50px, auto);
-        background-color: white;
-        border-bottom: 8px solid rgb(79, 88, 96);
-        text-align: center;
-    }
-
-    #other_contact_info {
-        grid-area: o_con_inf;
-        text-align: center;
-    }
-
-    #email_ {
-        width: 400px;
-    }
-
-    #comment_ {
-        width: 400px;
-        height: 200px;
-    }
-
-    #the_form {
-        text-align: center;
-        grid-area: input_;
-        background-color: white;
-        padding: 15px 0 15px 0;
-    }
-
-    #break_for_contact {
-        display: grid;
-        grid-area: b_contact_;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-rows: minmax(10px, auto);
-        grid-template-areas: 
-            ". p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact .";
-        background-color: rgb(79, 88, 96);
-        height: 130px;
-        margin: 50px 0 0 0;
-        padding: 20px;
-    }
-
-    #put_in_middle_contact {
-        margin: auto;
-        padding: 20px;
-        background-color: white;
-        grid-area: p_contact;
-    }
+        }
 
+
+        #proj2 > a {
+            color: black;
+        }
+
+
+        #proj2 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        #proj3 {
+            grid-area: p3;
+            height: auto;
+            width: auto;
+        }
+
+
+        #proj3Img {
+            height: 400px;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+
+        #proj3 > a {
+            color: black;
+        }
+
+
+        #proj3 > a:hover {
+            color: rgb(124, 124, 124);
+        }
+
+
+        div h1 > .anchor_tag_breaks {
+            color: white;
+        }
+        
+        .size_other_projs {
+            font-size: 40px;
+        }
+
+
+        #break_for_work {
+            display: grid;
+            grid-area: bforwork;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". . . pmiddle pmiddle pmiddle pmiddle pmiddle pmiddle . . .";
+            background-color: rgb(26, 106, 163);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+
+        }
+
+        #put_in_the_middle {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: pmiddle;
+        }
+
+
+        /*--------------------------*/
+        #about_grid {
+            display: grid;
+            grid-area: about_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me abt_me ."
+                ". summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ summ_ ."
+                ". desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about desc_about ."
+                ". tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ tech_ ."
+                "l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec l_sec"
+                "b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about b_for_about";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #about_me {
+            grid-area: abt_me;
+            margin: 0 0 0 0;
+            text-align: center;
+        }
+
+        #about_me h1 {
+            font-size: 50px;
+        }
+
+        #summary_ {
+            text-align: center;
+            grid-area: summ_;
+            border-bottom: 8px solid rgb(16, 141, 150);
+        }
+
+        #tech_ex {
+            grid-area: tech_;
+            border-bottom: 8px solid rgb(16, 141, 150);
+            text-align: center;
+        }
+
+        #description_about {
+            grid-area: desc_about;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        #lang_sec{
+            grid-area: l_sec;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            text-align: center;
+
+        }
+
+        #break_for_about {
+            display: grid;
+            grid-area: b_for_about;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                "pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout pabout";
+            background-color: rgb(16, 141, 150);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+        }
+
+        #put_in_the_middle_about {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: pabout;
+        }
+
+
+        /* CONTACT SECTION */
+
+
+        .contact_grid {
+
+            display: grid;
+            grid-area: cont_g;
+
+            grid-gap: 0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-rows: minmax(50px, auto);
+            grid-template-areas: 
+                ". cont cont cont cont cont cont cont cont cont cont ."
+                ". dc dc dc dc dc dc dc dc dc dc ."
+                ". input_ input_ input_ input_ input_ input_ input_ input_ input_ input_ ."
+                ". tc tc tc tc tc tc tc tc tc tc ."
+                ". o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf o_con_inf ."
+                "b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_ b_contact_";
+
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        #contact_ {
+            grid-area: cont;
+            margin: 50px 0 0 0;
+            text-align: center;
+        }
+
+        #contact_ h1 {
+            font-size: 60px;
+        }
+
+        #title_direct_con {
+            grid-area: dc;
+            text-align: center;
+            border-bottom: 8px solid rgb(79, 88, 96);
+            padding: 0 0 0 0;
+        }
+
+        #title_try_contact {
+            grid-area: tc;
+            grid-auto-rows: minmax(50px, auto);
+            background-color: white;
+            border-bottom: 8px solid rgb(79, 88, 96);
+            text-align: center;
+        }
+
+        #other_contact_info {
+            grid-area: o_con_inf;
+            text-align: center;
+        }
+
+        #email_ {
+            width: 400px;
+        }
+
+        #comment_ {
+            width: 400px;
+            height: 200px;
+        }
+
+        #the_form {
+            text-align: center;
+            grid-area: input_;
+            background-color: white;
+            padding: 15px 0 15px 0;
+        }
+
+        #break_for_contact {
+            display: grid;
+            grid-area: b_contact_;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(10px, auto);
+            grid-template-areas: 
+                ". p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact p_contact .";
+            background-color: rgb(79, 88, 96);
+            height: 130px;
+            margin: 50px 0 0 0;
+            padding: 20px;
+        }
+        
+        #put_in_middle_contact {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            grid-area: p_contact;
+        }
+        
+        #footer {
+            display: grid;
+            grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(40px, auto);
+            grid-area: fter;
+            height: 300px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            grid-template-areas: 
+                ". . . . . . . . . . . ."
+                "f_img_ f_img_ f_wrk_ f_wrk_ f_abt_ f_abt_ f_con_ f_con_ f_res_ f_res_ f_hire_ f_hire_";
+        }
+
+        #footer_img {
+            grid-area: f_img_;
+            height: 150px;
+            width: 150px;
+            padding: 0 0 20px 50px;
+            margin: 0 auto;
+        }
+
+        #footer_img_ {
+            margin: 0 auto;
+            height: inherit;
+            width: inherit;
+        }
+
+        #footer_work {
+            grid-area: f_wrk_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_about {
+            grid-area: f_abt_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_contact {
+            grid-area: f_con_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_resume {
+            grid-area: f_res_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_hireme {
+            grid-area: f_hire_;
+            padding: 40px 0 0 0;
+        }
+
+        #scroll_to_top{ 
+            grid-area: stotop_stop;
+        }
 }
+
 /* IPAD */
 /* IPAD */
 /* IPAD */
@@ -1696,7 +2420,8 @@ div h1 > .anchor_tag_breaks {
 /* IPAD Pro */
 /* IPAD Pro */
 /* IPAD Pro */
-/* IPAD Pro */
+/* IPAD Pro 
+
 @media screen 
     and (min-width: 1024px)
     and (max-width: 1366px){
@@ -1719,7 +2444,6 @@ div h1 > .anchor_tag_breaks {
     }
 
         
-    /* INFORMATION SECTION WITHIN MAIN GRID. */
 
 
     .info_grid {
@@ -1784,8 +2508,6 @@ div h1 > .anchor_tag_breaks {
     }
     
 
-    /* NAVIGATION SECTION*/
-
 
     .nav_grid {
 
@@ -1849,7 +2571,6 @@ div h1 > .anchor_tag_breaks {
     }
 
 
-    /* WORK SECTION*/
 
 
     .work_grid {
@@ -1937,7 +2658,7 @@ div h1 > .anchor_tag_breaks {
         padding: 0 0 0 0;
         height: auto;
         width: 100%;
-        /*border: 1px solid rgb(0, 0, 0);*/
+
     }
 
 
@@ -1985,7 +2706,6 @@ div h1 > .anchor_tag_breaks {
     #proj2Img {
         height: 250px;
         width: 100%;
-        /*border: 1px solid rgb(0, 0, 0);*/
     }
 
 
@@ -2010,7 +2730,6 @@ div h1 > .anchor_tag_breaks {
     #proj3Img {
         height: 250px;
         width: 100%;
-        /*border: 1px solid rgb(0, 0, 0);*/
     }
 
 
@@ -2109,21 +2828,6 @@ div h1 > .anchor_tag_breaks {
         text-align: center;
 
     }
-    
-    /*
-    #see_more {
-        grid-area: c_more;
-    }
-    
-    
-    #click_for_div {
-        grid-area: click_;
-    }
-
-    #click_for_div_to_hide {
-        grid-area: click_hide;
-    }
-    */
 
     #break_for_about {
         display: grid;
@@ -2145,8 +2849,7 @@ div h1 > .anchor_tag_breaks {
         grid-area: pabout;
     }
     
-    
-    /* CONTACT SECTION */
+
 
 
     .contact_grid {
@@ -2240,7 +2943,7 @@ div h1 > .anchor_tag_breaks {
 
 }
 
-
+*/
 /* IPAD Pro */
 /* IPAD Pro */
 /* IPAD Pro */
@@ -2298,54 +3001,47 @@ div h1 > .anchor_tag_breaks {
 
 
 
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
+/* IPHONE 6/7/8*/
 
-
-
-
-
-
-
-
-
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-/* IPHONE 6/7/8*/
-@media screen 
-    and (min-width: 375px)
-    and (max-width: 667px)
-    and (orientation: portrait){
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
         #main_grid {
 
         display: grid;
@@ -2361,7 +3057,8 @@ div h1 > .anchor_tag_breaks {
             "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
             "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
             "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
-            "fter fter fter fter fter fter fter fter fter fter fter fter";
+            "fter fter fter fter fter fter fter fter fter fter fter fter"
+            "stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop";
         }
         
         /* INFORMATION SECTION WITHIN MAIN GRID. */
@@ -2632,14 +3329,6 @@ div h1 > .anchor_tag_breaks {
             color: rgb(255, 255, 255);
         }
 
-        /*
-        .icon {
-            height: 100px;
-            width 100px;
-            color: white;
-        }
-        */
-        
         
         /* WORK SECTION*/
         
@@ -2745,7 +3434,7 @@ div h1 > .anchor_tag_breaks {
             display: grid;
             grid-gap: 0px;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-auto-rows: minmax(10px, auto);
+            grid-auto-rows: minmax(100px, auto);
             grid-template-areas: 
                 "p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2"
                 ". . . . . . . . . . . ."
@@ -2932,19 +3621,6 @@ div h1 > .anchor_tag_breaks {
             grid-area: the_libs;
             text-align: center;
         }
-        /*
-        #see_more {
-            grid-area: c_more;
-        }
-
-        #click_for_div {
-            grid-area: click_;
-        }
-
-        #click_for_div_to_hide {
-            grid-area: click_hide;
-        }
-        */
 
         #break_for_about {
             display: grid;
@@ -3097,16 +3773,68 @@ div h1 > .anchor_tag_breaks {
         }
    
         #footer {
+            display: grid;
+            grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(40px, auto);
             grid-area: fter;
             height: 300px;
             width: 100%;
-            background-color: rgb(40, 40, 40);
+            background-color: rgb(255, 255, 255);
+            grid-template-areas: 
+                ". . . . . . . . . . . ."
+                "f_img_ f_img_ f_wrk_ f_wrk_ f_abt_ f_abt_ f_con_ f_con_ f_res_ f_res_ f_hire_ f_hire_";
+        }
+
+        #footer_img {
+            grid-area: f_img_;
+            height: 150px;
+            width: 150px;
+            padding: 0 0 20px 50px;
+            margin: 0 auto;
+        }
+
+        #footer_img_ {
+            margin: 0 auto;
+            height: inherit;
+            width: inherit;
+        }
+
+        #footer_work {
+            grid-area: f_wrk_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_about {
+            grid-area: f_abt_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_contact {
+            grid-area: f_con_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_resume {
+            grid-area: f_res_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_hireme {
+            grid-area: f_hire_;
+            padding: 40px 0 0 0;
+        }
+
+        #scroll_to_top{ 
+            grid-area: stotop_stop;
         }
 }
 
-@media screen 
-    and (min-width: 375px)
-    and (max-width: 812px)
+
+/* Landscape */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape){
         
         #main_grid {
@@ -3124,7 +3852,8 @@ div h1 > .anchor_tag_breaks {
             "work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g work_g"
             "about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g about_g"
             "cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g cont_g"
-            "fter fter fter fter fter fter fter fter fter fter fter fter";
+            "fter fter fter fter fter fter fter fter fter fter fter fter"
+            "stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop stotop_stop";
         }
         
         /* INFORMATION SECTION WITHIN MAIN GRID. */
@@ -3394,15 +4123,6 @@ div h1 > .anchor_tag_breaks {
             text-align: center;
             color: rgb(255, 255, 255);
         }
-
-        /*
-        .icon {
-            height: 100px;
-            width 100px;
-            color: white;
-        }
-        */
-        
         
         /* WORK SECTION*/
         
@@ -3686,20 +4406,7 @@ div h1 > .anchor_tag_breaks {
             grid-area: the_libs;
             text-align: left;
         }
-        /*
-        #see_more {
-            grid-area: c_more;
-        }
-
-        #click_for_div {
-            grid-area: click_;
-        }
-
-        #click_for_div_to_hide {
-            grid-area: click_hide;
-        }
-        */
-
+        
         #break_for_about {
             display: grid;
             grid-area: b_for_about;
@@ -3844,13 +4551,62 @@ div h1 > .anchor_tag_breaks {
         }
    
         #footer {
+            display: grid;
+            grid-template-areas: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(40px, auto);
             grid-area: fter;
             height: 300px;
             width: 100%;
-            background-color: rgb(40, 40, 40);
+            background-color: rgb(255, 255, 255);
+            grid-template-areas: 
+                ". . . . . . . . . . . ."
+                "f_img_ f_img_ f_wrk_ f_wrk_ f_abt_ f_abt_ f_con_ f_con_ f_res_ f_res_ f_hire_ f_hire_";
+        }
+
+        #footer_img {
+            grid-area: f_img_;
+            height: 150px;
+            width: 150px;
+            padding: 0 0 20px 50px;
+            margin: 0 auto;
+        }
+
+        #footer_img_ {
+            margin: 0 auto;
+            height: inherit;
+            width: inherit;
+        }
+
+        #footer_work {
+            grid-area: f_wrk_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_about {
+            grid-area: f_abt_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_contact {
+            grid-area: f_con_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_resume {
+            grid-area: f_res_;
+            padding: 40px 0 0 0;
+        }
+
+        #footer_hireme {
+            grid-area: f_hire_;
+            padding: 40px 0 0 0;
+        }
+
+        #scroll_to_top{ 
+            grid-area: stotop_stop;
         }
 }
-
+*/
 /* IPHONE 6/7/8*/
 /* IPHONE 6/7/8*/
 /* IPHONE 6/7/8*/
@@ -3896,133 +4652,3 @@ div h1 > .anchor_tag_breaks {
 
 
 
-
-
-
-
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-
-@media screen 
-    and (min-width: 414px)
-    and (min-width: 736px){
-        
-}
-
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
-/* IPHONE 6/7/8 PLUS */
