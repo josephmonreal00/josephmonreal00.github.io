@@ -24,7 +24,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-        ". w_b_hme . . . . . . . . .";
+        ". w_b_hme w_b_hme w_b_hme w_b_hme . . . . . .";
     background-color: white;
     grid-area: b_hme_;
 }

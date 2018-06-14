@@ -23,7 +23,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-        ". w_b_hme . . . . . . . . .";
+        ". w_b_hme w_b_hme w_b_hme . . . . . . .";
     background-color: white;
     grid-area: b_hme_;
 }
@@ -109,7 +109,7 @@ div h4 > a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: minmax(10px, auto);
     grid-template-areas: 
-        "img_t1 img_t1 img_t1 img_t1 img_t1 . . . d_arrow d_arrow d_arrow d_arrow"
+        "img_t1 img_t1 img_t1 img_t1 img_t1 img_t1 img_t1 . d_arrow d_arrow d_arrow d_arrow"
         "y_info y_info y_info y_info y_info y_info y_info y_info y_info y_info y_info y_info";
 }
 
@@ -236,7 +236,7 @@ div h4 > a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: minmax(10px, auto);
     grid-template-areas: 
-        "img_t4 img_t4 img_t4 img_t4 img_t4 . . . d_arrow_4 d_arrow_4 d_arrow_4 d_arrow_4"
+        "img_t4 img_t4 img_t4 img_t4 img_t4 img_t4 img_t4 . d_arrow_4 d_arrow_4 d_arrow_4 d_arrow_4"
         "p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_ p4info_";
 }
 
@@ -279,7 +279,7 @@ div h4 > a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: minmax(10px, auto);
     grid-template-areas: 
-        "img_t5 img_t5 img_t5 img_t5 img_t5 . . . d_arrow_5 d_arrow_5 d_arrow_5 d_arrow_5"
+        "img_t5 img_t5 img_t5 img_t5 img_t5 img_t5 img_t5 . d_arrow_5 d_arrow_5 d_arrow_5 d_arrow_5"
         "p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_ p5info_";
 }
 
@@ -322,7 +322,7 @@ div h4 > a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: minmax(10px, auto);
     grid-template-areas: 
-        "img_t6 img_t6 img_t6 img_t6 img_t6 . . . d_arrow_6 d_arrow_6 d_arrow_6 d_arrow_6"
+        "img_t6 img_t6 img_t6 img_t6 img_t6 img_t6 img_t6 . d_arrow_6 d_arrow_6 d_arrow_6 d_arrow_6"
         "p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_ p6info_";
 }
 
